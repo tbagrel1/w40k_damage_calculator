@@ -1,0 +1,632 @@
+[
+    {
+        "name": "[GK] Strike Squad (5p., +1Psilencer)",
+        "points": 110,
+        "W": 2,
+        "unit_size": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "hasAoC": true,
+        "psykerMW": 2,
+        "weaponsR": [
+            {
+                "name": "Storm Bolter (*)",
+                "hits": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Psilencer",
+                "hits": 6,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Nemesis Force Sword",
+                "hits": 13,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "[GK] Brotherhood Terminators (5p.)",
+        "points": 200,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "hasAoC": true,
+        "unit_size": 5,
+        "psykerMW": 2,
+        "weaponsR": [
+            {
+                "name": "Storm Bolter",
+                "hits": 20,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Nemesis Force Sword",
+                "hits": 16,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "[GK] Nemesis DreadKnight (+GPsi. +HPsy. +NGSword sweep)",
+        "points": 185,
+        "W": 13,
+        "T": 6,
+        "Sv": 2,
+        "ISv": 4,
+        "hasAoC": false,
+        "vehicle": true,
+        "unit_size": 1,
+        "psykerMW": 2,
+        "weaponsR": [
+            {
+                "name": "Heavy Psycannon",
+                "hits": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "Gatling Psilencer",
+                "hits": 12,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Nemesis Greatsword",
+                "hits": 10,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "[GK] Kaldor Draigo",
+        "W": 7,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 3,
+        "hasAoC": true,
+        "unit_size": 1,
+        "points": 180,
+        "psykerMW": 2,
+        "weaponsR": [
+            {
+                "name": "Master-crafted Storm Bolter",
+                "hits": 4,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "The Titansword",
+                "hits": 7,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "[DA] Leviathan Dreadnought (Grav-Flux B.)",
+        "points": 220,
+        "unit_size": 1,
+        "W": 13,
+        "T": 7,
+        "Sv": 2,
+        "ISv": 5,
+        "hasAoC": true,
+        "dmgRed": "-1",
+        "vehicle": true,
+        "weaponsR": [
+            {
+                "name": "Grav-Flux Bombard",
+                "hits": 8,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            },
+            {
+                "name": "Twin Volkite Caliver",
+                "hits": 8,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": 0,
+                "D": 2,
+                "MWonW6": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "<Base Weapon>",
+                "hits": 5,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "[DA] Leviathan Dreadnought (Storm Cannon)",
+        "points": 240,
+        "unit_size": 1,
+        "W": 13,
+        "T": 7,
+        "Sv": 2,
+        "ISv": 5,
+        "hasAoC": true,
+        "dmgRed": "-1",
+        "vehicle": true,
+        "weaponsR": [
+            {
+                "name": "Storm Cannon",
+                "hits": 16,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -1,
+                "D": 2
+            },
+            {
+                "name": "Twin Volkite Caliver",
+                "hits": 8,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": 0,
+                "D": 2,
+                "MWonW6": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "<Base Weapon>",
+                "hits": 5,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "[DA] Intercessor squad (5p., ABR)",
+        "points": 100,
+        "unit_size": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "hasAoC": true,
+        "weaponsR": [
+            {
+                "name": "Auto-Bolt Rifle",
+                "hits": 15,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "<Base Weapon>",
+                "hits": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Chainsword",
+                "hits": 4,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "[DA] Attack Bike Squad (3p., 3xMM)",
+        "points": 180,
+        "unit_size": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "hasAoC": true,
+        "weaponsR": [
+            {
+                "name": "Twin Boltgun",
+                "hits": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Multi-melta",
+                "hits": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "<Base Weapon>",
+                "hits": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "[DA] Deathwing Terminator Squad (5p., 4xChainfist, 1xTH/SS)",
+        "points": 195,
+        "unit_size": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "hasAoC": true,
+        "transhuman": true,
+        "weaponsR": [
+            {
+                "name": "Storm Bolter",
+                "hits": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Chainfist",
+                "hits": 12,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -4,
+                "D": "D3",
+                "DonVehicle": 3
+            },
+            {
+                "name": "Thunder Hammer",
+                "hits": 4,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "[DA] Deathwing Terminator Squad (5p., 4xPowerfist, 1xTH/SS)",
+        "points": 195,
+        "unit_size": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "hasAoC": true,
+        "transhuman": true,
+        "weaponsR": [
+            {
+                "name": "Storm Bolter",
+                "hits": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Powerfist",
+                "hits": 12,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            },
+            {
+                "name": "Thunder Hammer",
+                "hits": 4,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "[DA] Relic Terminator Squad (5p., 5xSB/LC)",
+        "points": 170,
+        "unit_size": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "hasAoC": true,
+        "transhuman": true,
+        "weaponsR": [
+            {
+                "name": "Storm Bolter",
+                "hits": 20,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Lightning Claw",
+                "hits": 21,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -2,
+                "D": 1,
+                "rerollWoundFull": true
+            }
+        ]
+    },
+    {
+        "name": "[DA] Terminator Assault Squad (5p., 5xDLC)",
+        "points": 165,
+        "unit_size": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "hasAoC": true,
+        "transhuman": true,
+        "weaponsR": [
+        ],
+        "weaponsM": [
+            {
+                "name": "Lightning Claw",
+                "hits": 26,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -2,
+                "D": 1,
+                "rerollWoundFull": true
+            }
+        ]
+    },
+    {
+        "name": "[DA] Bladeguard Veteran Squad (3p., 3xBP)",
+        "points": 105,
+        "unit_size": 3,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 4,
+        "hasAoC": false,
+        "transhuman": true,
+        "weaponsR": [
+            {
+                "name": "Heavy Bolt Pistol",
+                "hits": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Master-crafted Power Sword",
+                "hits": 13,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "[DA] Hellblaster Squad (5p., API, !RRH1)",
+        "points": 165,
+        "unit_size": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "hasAoC": true,
+        "transhuman": false,
+        "weaponsR": [
+            {
+                "name": "Assault Plasma Incinerator",
+                "hits": 15,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -4,
+                "D": 2,
+                "rerollHit1": true
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "<Base Weapon>",
+                "hits": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "[DA] Centurion Assault Squad (3p., 6xM, 3xHB)",
+        "points": 225,
+        "unit_size": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": null,
+        "hasAoC": true,
+        "transhuman": false,
+        "weaponsR": [
+            {
+                "name": "Melta",
+                "hits": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            },
+            {
+                "name": "Hurricane Bolter",
+                "hits": 27,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Siege drills",
+                "hits": 13,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "[DA] Centurion Assault Squad (3p., 6xM, AL)",
+        "points": 195,
+        "unit_size": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": null,
+        "hasAoC": true,
+        "transhuman": false,
+        "weaponsR": [
+            {
+                "name": "Melta",
+                "hits": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "Siege drills",
+                "hits": 13,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "[DA] Inceptor Squad (3p., 3xAB)",
+        "points": 120,
+        "unit_size": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "hasAoC": true,
+        "transhuman": false,
+        "weaponsR": [
+            {
+                "name": "Assault Bolter",
+                "hits": 18,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "<Base Weapon>",
+                "hits": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "[DA] Inceptor Squad (3p., 3xPE)",
+        "points": 180,
+        "unit_size": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "hasAoC": true,
+        "transhuman": false,
+        "weaponsR": [
+            {
+                "name": "Plasma Exterminator",
+                "hits": 12,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "rerollHit1": true
+            }
+        ],
+        "weaponsM": [
+            {
+                "name": "<Base Weapon>",
+                "hits": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    }
+]
