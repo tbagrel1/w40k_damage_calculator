@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Intercessor Squad",
+        "variant": "ABR +CS",
+        "cost": 100,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Auto-Bolt Rifle",
+                "attackNb": 15,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    }
+]

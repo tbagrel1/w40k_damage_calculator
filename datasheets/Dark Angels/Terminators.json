@@ -1,0 +1,160 @@
+[
+    {
+        "name": "Deathwing Terminator Squad",
+        "variant": "4CF 1TH/SS",
+        "cost": 195,
+        "unitSize": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "keywords": ["armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Chainfist",
+                "attackNb": 12,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -4,
+                "D": "D3",
+                "D@Vehicle": 3
+            },
+            {
+                "name": "Thunder Hammer",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Deathwing Terminator Squad",
+        "variant": "4PF 1TH/SS",
+        "cost": 195,
+        "unitSize": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "keywords": ["armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Powerfist",
+                "attackNb": 12,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            },
+            {
+                "name": "Thunder Hammer",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Deathwing Terminator Squad",
+        "variant": "5TH/SS",
+        "cost": 215,
+        "unitSize": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 1,
+        "ISv": 4,
+        "keywords": ["transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Thunder Hammer",
+                "attackNb": 16,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Relic Terminator Squad",
+        "variant": "5SB/LC",
+        "cost": 170,
+        "unitSize": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "keywords": ["armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter",
+                "attackNb": 20,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Lightning Claw",
+                "attackNb": 21,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -2,
+                "D": 1,
+                "reroll@WF": true
+            }
+        ]
+    },
+    {
+        "name": "Terminator Assault Squad",
+        "variant": "5DLC",
+        "cost": 165,
+        "unitSize": 5,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "keywords": ["armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Lightning Claw",
+                "attackNb": 26,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -2,
+                "D": 1,
+                "reroll@WF": true
+            }
+        ]
+    }
+]

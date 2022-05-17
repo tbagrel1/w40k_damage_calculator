@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Strike Squad",
+        "variant": "+Psi",
+        "cost": 110,
+        "W": 2,
+        "unitSize": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "psykerMW": 1.5,
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter (*)",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Psilencer",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Nemesis Force Sword",
+                "attackNb": 13,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Brotherhood Terminators",
+        "variant": "",
+        "cost": 200,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "keywords": ["armorOfContempt"],
+        "unitSize": 5,
+        "psykerMW": 1.5,
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter",
+                "attackNb": 20,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Nemesis Force Sword",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    }
+]

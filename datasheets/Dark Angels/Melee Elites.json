@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Bladeguard Veteran Squad",
+        "variant": "3BP",
+        "cost": 105,
+        "unitSize": 3,
+        "W": 3,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Heavy Bolt Pistol",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Master-crafted Power Sword",
+                "attackNb": 13,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Centurion Assault Squad",
+        "variant": "6M +3HB",
+        "cost": 225,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Melta Rifle",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            },
+            {
+                "name": "Hurricane Bolter",
+                "attackNb": 27,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Siege Drills",
+                "attackNb": 13,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Centurion Assault Squad",
+        "variant": "6M AL",
+        "cost": 195,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Melta Rifle",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Siege Drills",
+                "attackNb": 13,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    }
+]

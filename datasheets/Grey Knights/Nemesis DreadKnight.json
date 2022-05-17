@@ -1,0 +1,43 @@
+[
+    
+    {
+        "name": "Nemesis DreadKnight",
+        "variant": "+GP +HP +NGS:sweep",
+        "cost": 185,
+        "W": 13,
+        "T": 6,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["vehicle"],
+        "unitSize": 1,
+        "psykerMW": 1.5,
+        "rangedWeapons": [
+            {
+                "name": "Heavy Psycannon",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "Gatling Psilencer",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Nemesis Greatsword",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    }
+]

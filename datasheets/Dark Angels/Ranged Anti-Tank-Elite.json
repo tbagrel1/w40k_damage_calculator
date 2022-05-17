@@ -1,0 +1,245 @@
+[
+    {
+        "name": "Attack Bike Squad",
+        "variant": "3MM",
+        "cost": 180,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Twin Boltgun",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Multi-melta",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Hellblaster Squad",
+        "variant": "API !RRH1",
+        "cost": 165,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Assault Plasma Incinerator",
+                "attackNb": 15,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -4,
+                "D": 2,
+                "reroll@H1": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Inceptor Squad",
+        "variant": "PE !RRH1",
+        "cost": 180,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Plasma Exterminator",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "reroll@H1": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Eradicator Squad",
+        "variant": "3M",
+        "cost": 135,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Melta Rifle",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Eradicator Squad",
+        "variant": "2M 1MM",
+        "cost": 145,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Melta Rifle",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            },
+            {
+                "name": "Multi-melta",
+                "attackNb": 4,
+                "WS/BS": 3.5,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Eradicator Squad",
+        "variant": "3HM",
+        "cost": 150,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Melta Rifle",
+                "attackNb": 6,
+                "WS/BS": 3.5,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+3"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Eradicator Squad",
+        "variant": "2HM 1MM",
+        "cost": 155,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Melta Rifle",
+                "attackNb": 4,
+                "WS/BS": 3.5,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+3"
+            },
+            {
+                "name": "Multi-melta",
+                "attackNb": 4,
+                "WS/BS": 3.5,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+1"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    }
+]

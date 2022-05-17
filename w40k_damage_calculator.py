@@ -1,8 +1,18 @@
-import sys
 import json
 import math
 import click
+import os
 from copy import deepcopy
+
+# TODO: optimal profile calculator: choose M, R, or M+R on a per-unit basis based on efficiency
+# TODO: Melee efficiency means nothing for vehicle (but be careful blast)
+# TODO: indirect damage capping
+
+ALLOWED_KEYWORDS = [
+    "transhuman",
+    "vehicle",
+    "armorOfContempt"
+]
 
 def compute_wound_chance(strength, toughness, transhuman):
     if strength >= 2 * toughness:
@@ -19,11 +29,11 @@ def compute_wound_chance(strength, toughness, transhuman):
 def compute_ifs(ap, sv, isv, aoc):
     if isv == 0 or isv is None:
         isv = 7
-    fs = min(
+    fs = max(2, min(
         isv,
         sv + max(0, -ap - aoc)
-    )
-    ifs = min(6, max(0, fs - 1))
+    ))
+    ifs = max(0, fs - 1)
     return ifs
 
 def compute_dmg(damage_prof, target_wounds, red):
@@ -61,23 +71,23 @@ def apply_red(base_dmg, red):
     elif red[1] == "/":
         return max(1, math.ceil(base_dmg / int(red[1:])))
 
-def show_profile(aoc_enabled, T, W, Sv, ISv, hasAoC, **other):
-    return f"[T{T}/{W}W/{Sv}+" + (f"/{ISv}++" if (ISv != 0 and ISv is not None) else "") + (", AoC" if aoc_enabled and hasAoC else "") + "]"
+def show_profile(aoc_enabled, T, W, Sv, ISv, keywords, **other):
+    return f"[T{T}/{W}W/{Sv}+" + (f"/{ISv}++" if (ISv != 0 and ISv is not None) else "") + (", AoC" if aoc_enabled and "armorOfContempt" in keywords else "") + "]"
 
 def fightRM(unit, target, aoc_enabled, defense=False):
-    target_name = target["name"] if not defense else unit["name"]
+    target_id = target["id"] if not defense else unit["id"]
     weight = target["weight"] if not defense else unit["weight"]
     W = target["W"]
     action_desc = "Attacking" if not defense else "Attacked by"
-    print(f"- {action_desc} {target_name} " + (show_profile(aoc_enabled, **target) + " " if not defense else "") + f"(weight {weight*100:.0f}%)")
-    tR, effR = fight("R", unit, target, aoc_enabled)
-    tM, effM = fight("M", unit, target, aoc_enabled)
+    print(f"- {action_desc} {target_id} " + (show_profile(aoc_enabled, **target) + " " if not defense else "") + f"(weight {weight*100:.0f}%)")
+    tR, effR = fight("ranged", unit, target, aoc_enabled)
+    tM, effM = fight("melee", unit, target, aoc_enabled)
     total = tR + tM
     if "psykerMW" in unit:
         # counted twice for melee + range
         psyker_mw = unit["psykerMW"]
         total -= psyker_mw
-    efficiency = ((total / (W * target["unit_size"])) * target["points"]) / unit["points"]
+    efficiency = ((total / (W * target["unitSize"])) * target["cost"]) / unit["cost"]
     print(" -> Total: " + f"{total:.2f}W (eff: {efficiency:.2f}, {total / W:.2f} dead models)")
     return [total, efficiency, tR, effR, tM, effM]
 
@@ -85,40 +95,40 @@ def make_dmg_repr(D, W, red):
     if isinstance(D, int):
         return str(min(apply_red(D, red), W))
     else:
-        return f"min({D}{red}, W)"
+        return f"min({D}{red}, {W})"
 
 def fight(mode, unit, target, aoc_enabled):
     total = 0
     W = target["W"]
-    for weapon in unit["weapons" + mode]:
+    for weapon in unit[mode + "Weapons"]:
         weapon_name = weapon["name"]
-        mwonw6 = weapon["MWonW6"] if "MWonW6" in weapon else 0
-        hits = weapon["hits"]
+        mwonw6 = weapon["MW@H1"] if "MW@H1" in weapon else 0
+        hits = weapon["attackNb"]
         D = weapon["D"]
         iwsbs = 6 - weapon["WS/BS"] + 1
-        wc = compute_wound_chance(weapon["S"], target["T"], target["transhuman"] if "transhuman" in target else False)
-        ifs = compute_ifs(weapon["AP"], target["Sv"], target["ISv"], target["hasAoC"] and aoc_enabled)
-        dmg_red = target["dmgRed"] if "dmgRed" in target else ""
-        if "DonVehicle" in weapon and "vehicle" in target and target["vehicle"]:
-            DonVehicle = weapon["DonVehicle"]
+        wc = compute_wound_chance(weapon["S"], target["T"], "transhuman" in target["keywords"])
+        ifs = compute_ifs(weapon["AP"], target["Sv"], target["ISv"], "armorOfContempt" in target["keywords"]  and aoc_enabled)
+        dmg_red = target["damageReduction"] if "damageReduction" in target else ""
+        if "D@Vehicle" in weapon and "vehicle" in target["keywords"]:
+            DonVehicle = weapon["D@Vehicle"]
             dmg_repr = make_dmg_repr(DonVehicle, W, dmg_red)
             dmg = compute_dmg(DonVehicle, W, dmg_red)
         else:
             dmg_repr = make_dmg_repr(D, W, dmg_red)
             dmg = compute_dmg(D, W, dmg_red)
-        if "rerollHitFull" in weapon and weapon["rerollHitFull"]:
+        if "reroll@HF" in weapon and weapon["reroll@HF"]:
             rrhc = "!!"
             hit_prob = iwsbs/6 + (1-iwsbs/6)*(iwsbs/6)
-        elif "rerollHit1" in weapon and weapon["rerollHit1"]:
+        elif "reroll@H1" in weapon and weapon["reroll@H1"]:
             rrhc = "!"
             hit_prob = iwsbs/6 + (1/6)*(iwsbs/6)
         else:
             rrhc = ""
             hit_prob = iwsbs/6
-        if "rerollWoundFull" in weapon and weapon["rerollWoundFull"]:
+        if "reroll@WF" in weapon and weapon["reroll@WF"]:
             rrwc = "!!"
             wound_prob = wc/6 + (1-wc/6)*(wc/6)
-        elif "rerollWound1" in weapon and weapon["rerollWound1"]:
+        elif "reroll@W1" in weapon and weapon["reroll@W1"]:
             rrwc = "!"
             wound_prob = wc/6 + (1/6)*(wc/6)
         else:
@@ -131,7 +141,7 @@ def fight(mode, unit, target, aoc_enabled):
         psyker_mw = unit["psykerMW"]
         print(f"  + Psyker Smite: ~{psyker_mw} MW")
         total += psyker_mw
-    efficiency = ((total / (W * target["unit_size"])) * target["points"]) / unit["points"]
+    efficiency = ((total / (W * target["unitSize"])) * target["cost"]) / unit["cost"]
     print(f"  -> " + ("Ranged: " if mode == "R" else "Melee: ") + f"{total:.2f}W (eff: {efficiency:.2f}, {total / W:.2f} dead models)")
     return total, efficiency
 
@@ -157,38 +167,94 @@ def round(unit, targets, aoc):
     print("# Overall (dmg score x tank score)")
     print(f">> R/R eff: {atk_eff_r/def_eff_r:.2f}\n   M/M eff: {atk_eff_m/def_eff_m:.2f}\n   R+M/R+M eff: {atk_eff/def_eff:.2f}\n\n")
 
+def load_datasheets(root_path):
+    all_units_dict = {}
+    groups_dict = {}
+    add_datasheets(all_units_dict, groups_dict, [], root_path)
+    return all_units_dict, groups_dict
+
+def add_datasheets(all_units_dict, groups_dict, groups, path):
+    if os.path.isdir(path):
+        for root, dirs, files in os.walk(path):
+            for file in files:
+                if not file.endswith(".json"):
+                    continue
+                group_name = file.split(".json")[0]
+                add_datasheets(all_units_dict, groups_dict, groups + [group_name], os.path.join(root, file))
+            for dir_ in dirs:
+                add_datasheets(all_units_dict, groups_dict, groups + [dir_], os.path.join(root, dir_))
+    else:
+        print(f"Loading datasheets from {path}...")
+        if not groups:
+            raise Exception(f"Datasheets file {path} is not within an army directory.")
+        army = groups[0]
+        with open(path, "r", encoding="utf-8") as datasheets_file:
+            content = json.load(datasheets_file)
+        for datasheet in content:
+            name = datasheet["name"]
+            for keyword in datasheet["keywords"]:
+                if keyword not in ALLOWED_KEYWORDS:
+                    raise Exception(f"Keyword '{keyword}' is not allowed in datasheet '{name}' in {path}")
+            datasheet_id = make_datasheet_id(army, datasheet)
+            datasheet["id"] = datasheet_id
+            datasheet["groups"] = groups
+            if datasheet_id in all_units_dict:
+                raise Exception(f"Datasheet with id '{datasheet_id}' is already present in the database (found the 2nd time in {path})")
+            all_units_dict[datasheet_id] = datasheet
+            for i in range(1, len(groups) + 1):
+                group_id = "/".join(groups[:i])
+                if group_id not in groups_dict:
+                    groups_dict[group_id] = []
+                groups_dict[group_id].append(datasheet)
+
+def make_datasheet_id(army, datasheet):
+    # "Dark Angels/Sicaran Omega@1/HB +2HB"
+    name = datasheet["name"]
+    unitSize = datasheet["unitSize"]
+    variant = datasheet["variant"]
+    return f"{army}/{name}@{unitSize}/{variant}"
+
 @click.command()
 @click.option("--aoc/--no-aoc", default=True, help="Should it take into account the new *Armor of Contempt* rule?")
 @click.option("--swap", is_flag=True, help="Should it analyse player 2 units (instead of player 1 units)?")
-@click.argument("DATASHEETS", type=click.Path(exists=True, file_okay=True, dir_okay=False, readable=True))
+@click.argument("DATASHEETS_DIR", type=click.Path(exists=True, file_okay=False, dir_okay=True, readable=True))
 @click.argument("BATTLE_PLAN", type=click.Path(exists=True, file_okay=True, dir_okay=False, readable=True))
-def main(aoc, swap, datasheets, battle_plan):
-    print(f"Reading datasheets from {datasheets}...")
-    with open(datasheets, "r", encoding="utf-8") as datasheet_file:
-        all_units = json.load(datasheet_file)
-    all_units_dict = { unit["name"]: unit for unit in all_units }
-    print(f"Reading battle plan from {battle_plan}...")
+def main(aoc, swap, datasheets_dir, battle_plan):
+    all_units_dict, groups_dict = load_datasheets(datasheets_dir)
+    print(f"\nLoading battle plan from {battle_plan}...\n")
     with open(battle_plan, "r", encoding="utf-8") as battle_file:
         data = json.load(battle_file)
-    targets = []
-    for d in data["player_2"]:
-        t = deepcopy(all_units_dict[d["name"]])
-        t["unit_nb"] = d["unit_nb"]
-        targets.append(t)
     units = []
     for d in data["player_1"]:
-        t = deepcopy(all_units_dict[d["name"]])
-        t["unit_nb"] = d["unit_nb"]
-        units.append(t)
+        if "include" in d:
+            g = deepcopy(groups_dict[d["include"]])
+            for t in g:
+                t["unitNb"] = 1
+            units.extend(g)
+        else:
+            t = deepcopy(all_units_dict[d["id"]])
+            t["unitNb"] = d["unitNb"]
+            units.append(t)
+    targets = []
+    for d in data["player_2"]:
+        if "include" in d:
+            g = deepcopy(groups_dict[d["include"]])
+            for t in g:
+                t["unitNb"] = 1
+            targets.extend(g)
+        else:
+            t = deepcopy(all_units_dict[d["id"]])
+            t["unitNb"] = d["unitNb"]
+            targets.append(t)
     if swap:
         targets, units = units, targets
-    total_targets_wounds = sum(target["unit_size"] * target["unit_nb"] * target["W"] for target in targets)
+    total_targets_wounds = sum(target["unitSize"] * target["unitNb"] * target["W"] for target in targets)
     for target in targets:
-        target["weight"] = (target["unit_size"] * target["unit_nb"] * target["W"]) / total_targets_wounds
+        target["weight"] = (target["unitSize"] * target["unitNb"] * target["W"]) / total_targets_wounds
     for unit in units:
-        unit_name = unit["name"]
+        unit_id = unit["id"]
         aoc_string = "(with Armor of Contempt)" if aoc else "(without Armor of Contempt)"
-        print(f"### {unit_name} {aoc_string} ###\n")
+        print(f"### {unit_id} {aoc_string} ###\n")
         round(unit, targets, aoc)
 
 if __name__ == "__main__":

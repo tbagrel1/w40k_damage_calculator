@@ -1,0 +1,175 @@
+[
+    {
+        "name": "Eliminator Squad",
+        "variant": "3BSR:mortis",
+        "cost": 75,
+        "unitSize": 3,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Sniper Rifle",
+                "attackNb": 3,
+                "WS/BS": 2.5,
+                "S": 5,
+                "AP": -2,
+                "D": 2,
+                "MW@H1": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Eliminator Squad",
+        "variant": "2BSR:mortis 1IBC",
+        "cost": 75,
+        "unitSize": 3,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Sniper Rifle",
+                "attackNb": 2,
+                "WS/BS": 2.5,
+                "S": 5,
+                "AP": -2,
+                "D": 2,
+                "MW@H1": 1
+            },
+            {
+                "name": "Investigator Bolt Carbine",
+                "attackNb": 1,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Eliminator Squad",
+        "variant": "3LF",
+        "cost": 90,
+        "unitSize": 3,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Las Fusil",
+                "attackNb": 3,
+                "WS/BS": 2.5,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Eliminator Squad",
+        "variant": "2LF 1IBC",
+        "cost": 85,
+        "unitSize": 3,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Las Fusil",
+                "attackNb": 2,
+                "WS/BS": 2.5,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            },
+            {
+                "name": "Investigator Bolt Carbine",
+                "attackNb": 1,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Suppressor Squad",
+        "variant": "",
+        "cost": 100,
+        "unitSize": 3,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Accelerator Autocannon",
+                "attackNb": 9,
+                "WS/BS": 3.5,
+                "S": 7,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    }
+]

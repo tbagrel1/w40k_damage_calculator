@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Inceptor Squad",
+        "variant": "AB",
+        "cost": 120,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Assault Bolter",
+                "attackNb": 18,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    }
+]

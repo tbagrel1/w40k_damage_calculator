@@ -1,16 +1,11 @@
 {
     "player_1": [
-        {"name": "[DA] Inceptor Squad (3p., 3xAB)", "unit_nb": 1},
-        {"name": "[DA] Inceptor Squad (3p., 3xPE)", "unit_nb": 1},
-        {"name": "[DA] Bladeguard Veteran Squad (3p., 3xBP)", "unit_nb": 2},
-        {"name": "[DA] Centurion Assault Squad (3p., 6xM, AL)", "unit_nb": 1},
-        {"name": "[DA] Centurion Assault Squad (3p., 6xM, 3xHB)", "unit_nb": 1}
-        
+        {"include": "Dark Angels/Terminators"}
     ],
     "player_2": [
-        {"name": "[GK] Strike Squad (5p., +1Psilencer)", "unit_nb": 3},
-        {"name": "[GK] Brotherhood Terminators (5p.)", "unit_nb": 1},
-        {"name": "[GK] Nemesis DreadKnight (+GPsi. +HPsy. +NGSword sweep)", "unit_nb": 2},
-        {"name": "[GK] Kaldor Draigo", "unit_nb": 1}
+        {"id": "Grey Knights/Strike Squad@5/+Psi", "unitNb": 3},
+        {"id": "Grey Knights/Brotherhood Terminators@5/", "unitNb": 1},
+        {"id": "Grey Knights/Nemesis DreadKnight@1/+GP +HP +NGS:sweep", "unitNb": 2},
+        {"id": "Grey Knights/Grand Master Voldus@1/", "unitNb": 1}
     ]
 }

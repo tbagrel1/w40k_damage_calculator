@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Kaldor Draigo",
+        "variant": "",
+        "W": 7,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 3,
+        "keywords": ["armorOfContempt"],
+        "unitSize": 1,
+        "cost": 180,
+        "psykerMW": 1.5,
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Storm Bolter",
+                "attackNb": 4,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "The Titansword",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Grand Master Voldus",
+        "variant": "",
+        "W": 6,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["armorOfContempt"],
+        "unitSize": 1,
+        "cost": 150,
+        "psykerMW": 1.5,
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Storm Bolter",
+                "attackNb": 4,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Malleus Argyrum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    }
+]
