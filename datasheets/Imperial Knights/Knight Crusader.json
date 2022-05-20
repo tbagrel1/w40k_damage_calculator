@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Knight Crusader",
+        "variant": "RFBC+HS +IMP",
+        "cost": 520,
+        "W": 24,
+        "T": 8,
+        "Sv": 3,
+        "ISv": 5,
+        "keywords": ["vehicle", "titanic"],
+        "unitSize": 1,
+        "rangedWeapons": [
+            {
+                "name": "Rapid-fire Battle Cannon",
+                "attackNb": 7,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -2,
+                "D": "D3"
+            },
+            {
+                "name": "Heavy Stubber",
+                "attackNb": 8,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Avenger Gatling Cannon",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "Heavy Flamer",
+                "attackNb": 12,
+                "WS/BS": 1,
+                "S": 5,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Ironstorm Missile Pod",
+                "attackNb": 3.5,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Titanic Feet",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    }
+]

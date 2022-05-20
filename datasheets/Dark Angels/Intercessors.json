@@ -8,7 +8,7 @@
         "T": 4,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Auto-Bolt Rifle",

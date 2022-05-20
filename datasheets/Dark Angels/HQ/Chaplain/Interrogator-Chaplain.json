@@ -1,0 +1,2406 @@
+[
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -1,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +MOS +R:TOT",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:MOR",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:BOF",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS !CK",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -1,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +MOS +R:TOT !CK",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:MOR !CK",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:BOF !CK",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS !Ine",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -1,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +MOS +R:TOT !Ine",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:MOR !Ine",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:BOF !Ine",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +MOS +R:TOT !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:MOR !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:BOF !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS !CK !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +MOS +R:TOT !CK !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:MOR !CK !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:BOF !CK !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS !Ine !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +MOS +R:TOT !Ine !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:MOR !Ine !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +MOS +R:BOF !Ine !MOS",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -1,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !CK",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -1,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !CK",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !CK",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !CK",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !Ine",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -1,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !Ine",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !Ine",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !Ine",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !CK !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !CK !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !CK !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !CK !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !Ine !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !Ine !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !Ine !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !Ine !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !CK !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !CK !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !CK !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !CK !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !Ine !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !Ine !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !Ine !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !Ine !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -1,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 10,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 10,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !CK !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -1,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !CK !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 10,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !CK !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 10,
+                "AP": -3,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !CK !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !Ine !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -1,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !Ine !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 10,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !Ine !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 10,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !Ine !MOS !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !CK !Ine",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -1,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !CK !Ine",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !CK !Ine",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !CK !Ine",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "MW@W6": 1,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP !CK !Ine !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Crozius Arcanum",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -1,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "CS +R:TOT !CK !Ine !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:MOR !CK !Ine !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of Redemption",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -3,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Interrogator-Chaplain",
+        "variant": "BP +R:BOF !CK !Ine !MOS",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Benediction of Fury",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -2,
+                "D": 4,
+                "MW@W6": 1,
+                "W@InfantryBiker": 2
+            }
+        ]
+    }
+]

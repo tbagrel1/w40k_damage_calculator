@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Strike Team",
+        "variant": "",
+        "cost": 80,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 4,
+        "ISv": null,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Pulse Rifle",
+                "attackNb": 15,
+                "WS/BS": 4,
+                "S": 5,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 5,
+                "S": 3,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    }
+]

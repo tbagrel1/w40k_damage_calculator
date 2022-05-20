@@ -2,19 +2,26 @@ import json
 import math
 import click
 import os
+import re
 from copy import deepcopy
 
 # TODO: optimal profile calculator: choose M, R, or M+R on a per-unit basis based on efficiency
 # TODO: Melee efficiency means nothing for vehicle (but be careful blast)
 # TODO: indirect damage capping
+# TODO: handle D6 on attackNb
 
 ALLOWED_KEYWORDS = [
     "transhuman",
     "vehicle",
-    "armorOfContempt"
+    "armorOfContempt",
+    "titanic",
+    "infantry",
+    "biker"
 ]
 
-def compute_wound_chance(strength, toughness, transhuman):
+def compute_wound_chance(strength, toughness, transhuman, override):
+    if override is not None:
+        return 6 - override + 1
     if strength >= 2 * toughness:
         return 3 if transhuman else 5 
     elif strength > toughness:
@@ -102,11 +109,14 @@ def fight(mode, unit, target, aoc_enabled):
     W = target["W"]
     for weapon in unit[mode + "Weapons"]:
         weapon_name = weapon["name"]
-        mwonw6 = weapon["MW@H1"] if "MW@H1" in weapon else 0
+        mwonw6 = weapon["MW@W6"] if "MW@W6" in weapon else 0
         hits = weapon["attackNb"]
         D = weapon["D"]
         iwsbs = 6 - weapon["WS/BS"] + 1
-        wc = compute_wound_chance(weapon["S"], target["T"], "transhuman" in target["keywords"])
+        wc = compute_wound_chance(
+            weapon["S"], target["T"], "transhuman" in target["keywords"],
+            weapon["W@InfantryBiker"] if ("W@InfantryBiker" in weapon and "transhuman" not in target["keywords"] and ("infantry" in target["keywords"] or "biker" in target["keywords"])) else None
+        )
         ifs = compute_ifs(weapon["AP"], target["Sv"], target["ISv"], "armorOfContempt" in target["keywords"]  and aoc_enabled)
         dmg_red = target["damageReduction"] if "damageReduction" in target else ""
         if "D@Vehicle" in weapon and "vehicle" in target["keywords"]:
@@ -142,7 +152,7 @@ def fight(mode, unit, target, aoc_enabled):
         print(f"  + Psyker Smite: ~{psyker_mw} MW")
         total += psyker_mw
     efficiency = ((total / (W * target["unitSize"])) * target["cost"]) / unit["cost"]
-    print(f"  -> " + ("Ranged: " if mode == "R" else "Melee: ") + f"{total:.2f}W (eff: {efficiency:.2f}, {total / W:.2f} dead models)")
+    print(f"  -> " + ("Ranged: " if mode == "ranged" else "Melee: ") + f"{total:.2f}W (eff: {efficiency:.2f}, {total / W:.2f} dead models)")
     return total, efficiency
 
 def round(unit, targets, aoc):
@@ -176,6 +186,8 @@ def load_datasheets(root_path):
 def add_datasheets(all_units_dict, groups_dict, groups, path):
     if os.path.isdir(path):
         for root, dirs, files in os.walk(path):
+            if root != path:
+                continue
             for file in files:
                 if not file.endswith(".json"):
                     continue
@@ -226,22 +238,32 @@ def main(aoc, swap, datasheets_dir, battle_plan):
         data = json.load(battle_file)
     units = []
     for d in data["player_1"]:
-        if "include" in d:
-            g = deepcopy(groups_dict[d["include"]])
+        if "include_group" in d:
+            g = deepcopy(groups_dict[d["include_group"]])
             for t in g:
                 t["unitNb"] = 1
             units.extend(g)
+        elif "include_regex" in d:
+            rr = "^" + d["include_regex"].replace("+", "\+") + "$"
+            r = re.compile(rr)
+            filtered = [deepcopy(all_units_dict[uid]) for uid in all_units_dict if r.search(uid) is not None]
+            units.extend(filtered)
         else:
             t = deepcopy(all_units_dict[d["id"]])
             t["unitNb"] = d["unitNb"]
             units.append(t)
     targets = []
     for d in data["player_2"]:
-        if "include" in d:
-            g = deepcopy(groups_dict[d["include"]])
+        if "include_group" in d:
+            g = deepcopy(groups_dict[d["include_group"]])
             for t in g:
                 t["unitNb"] = 1
             targets.extend(g)
+        elif "include_regex" in d:
+            rr = "^" + d["include_regex"].replace("+", "\+") + "$"
+            r = re.compile(rr)
+            filtered = [deepcopy(all_units_dict[uid]) for uid in all_units_dict if r.search(uid) is not None]
+            targets.extend(filtered)
         else:
             t = deepcopy(all_units_dict[d["id"]])
             t["unitNb"] = d["unitNb"]
@@ -254,7 +276,7 @@ def main(aoc, swap, datasheets_dir, battle_plan):
     for unit in units:
         unit_id = unit["id"]
         aoc_string = "(with Armor of Contempt)" if aoc else "(without Armor of Contempt)"
-        print(f"### {unit_id} {aoc_string} ###\n")
+        print(f"## {unit_id} {aoc_string} ##\n")
         round(unit, targets, aoc)
 
 if __name__ == "__main__":

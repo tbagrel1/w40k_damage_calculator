@@ -8,7 +8,7 @@
         "T": 4,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "psykerMW": 1.5,
         "rangedWeapons": [
             {
@@ -47,7 +47,7 @@
         "T": 4,
         "Sv": 2,
         "ISv": 5,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "unitSize": 5,
         "psykerMW": 1.5,
         "rangedWeapons": [

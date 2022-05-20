@@ -26,7 +26,7 @@
                 "S": 5,
                 "AP": 0,
                 "D": 2,
-                "MW@H1": 1
+                "MW@W6": 1
             }
         ],
         "meleeWeapons": [
@@ -67,7 +67,40 @@
                 "S": 5,
                 "AP": 0,
                 "D": 2,
-                "MW@H1": 1
+                "MW@W6": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Relic Contemptor Dreadnought",
+        "variant": "TVC",
+        "cost": 170,
+        "unitSize": 1,
+        "W": 9,
+        "T": 7,
+        "Sv": 3,
+        "ISv": 5,
+        "damageReduction": "-1",
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Twin Volkite Culverin",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": 0,
+                "D": 2,
+                "MW@W6": 1
             }
         ],
         "meleeWeapons": [

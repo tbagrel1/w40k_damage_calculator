@@ -8,7 +8,7 @@
         "T": 5,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["biker", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Twin Boltgun",
@@ -47,7 +47,7 @@
         "T": 4,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Assault Plasma Incinerator",
@@ -79,7 +79,7 @@
         "T": 5,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Plasma Exterminator",
@@ -111,7 +111,7 @@
         "T": 5,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Melta Rifle",
@@ -142,7 +142,7 @@
         "T": 5,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Melta Rifle",
@@ -181,7 +181,7 @@
         "T": 5,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Melta Rifle",
@@ -212,7 +212,7 @@
         "T": 5,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Melta Rifle",

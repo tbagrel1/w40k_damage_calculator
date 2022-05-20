@@ -1,0 +1,28 @@
+[
+    {
+        "name": "T7 3+ Tank Target",
+        "variant": "",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 11,
+        "T": 7,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle"],
+        "rangedWeapons": [],
+        "meleeWeapons": []
+    },
+    {
+        "name": "T8 2+ Tank Target",
+        "variant": "",
+        "cost": 150,
+        "unitSize": 1,
+        "W": 13,
+        "T": 8,
+        "Sv": 2,
+        "ISv": null,
+        "keywords": ["vehicle"],
+        "rangedWeapons": [],
+        "meleeWeapons": []
+    }
+]

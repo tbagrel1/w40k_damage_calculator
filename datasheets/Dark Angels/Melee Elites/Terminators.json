@@ -8,7 +8,7 @@
         "T": 4,
         "Sv": 2,
         "ISv": 5,
-        "keywords": ["armorOfContempt", "transhuman"],
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
         "rangedWeapons": [
             {
                 "name": "Storm Bolter",
@@ -48,7 +48,7 @@
         "T": 4,
         "Sv": 2,
         "ISv": 5,
-        "keywords": ["armorOfContempt", "transhuman"],
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
         "rangedWeapons": [
             {
                 "name": "Storm Bolter",
@@ -87,7 +87,7 @@
         "T": 4,
         "Sv": 1,
         "ISv": 4,
-        "keywords": ["transhuman"],
+        "keywords": ["infantry", "transhuman"],
         "rangedWeapons": [
         ],
         "meleeWeapons": [
@@ -110,7 +110,7 @@
         "T": 4,
         "Sv": 2,
         "ISv": 5,
-        "keywords": ["armorOfContempt", "transhuman"],
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
         "rangedWeapons": [
             {
                 "name": "Storm Bolter",
@@ -142,7 +142,7 @@
         "T": 4,
         "Sv": 2,
         "ISv": 5,
-        "keywords": ["armorOfContempt", "transhuman"],
+        "keywords": ["infantry", "armorOfContempt", "transhuman"],
         "rangedWeapons": [
         ],
         "meleeWeapons": [

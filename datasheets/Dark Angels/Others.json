@@ -8,7 +8,7 @@
         "T": 4,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Bolt Sniper Rifle",
@@ -17,7 +17,7 @@
                 "S": 5,
                 "AP": -2,
                 "D": 2,
-                "MW@H1": 1
+                "MW@W6": 1
             }
         ],
         "meleeWeapons": [
@@ -40,7 +40,7 @@
         "T": 4,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Bolt Sniper Rifle",
@@ -49,7 +49,7 @@
                 "S": 5,
                 "AP": -2,
                 "D": 2,
-                "MW@H1": 1
+                "MW@W6": 1
             },
             {
                 "name": "Investigator Bolt Carbine",
@@ -80,7 +80,7 @@
         "T": 4,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Las Fusil",
@@ -111,7 +111,7 @@
         "T": 4,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Las Fusil",
@@ -150,7 +150,7 @@
         "T": 4,
         "Sv": 3,
         "ISv": null,
-        "keywords": ["armorOfContempt"],
+        "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
                 "name": "Accelerator Autocannon",

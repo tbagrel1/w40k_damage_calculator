@@ -1,0 +1,15 @@
+{
+    "player_1": [
+        {"id": "Imperial Knights/Knight Crusader@1/RFBC+HS +IMP", "unitNb": 1},
+        {"id": "Imperial Knights/Armiger Helverin@1/HS", "unitNb": 1},
+        {"id": "Dark Angels/Leviathan Dreadnought@1/2SC 2TVC", "unitNb": 1},
+        {"id": "Dark Angels/Leviathan Dreadnought@1/2GFB 2TVC", "unitNb": 1},
+        {"id": "Dark Angels/Relic Contemptor Dreadnought@1/TVC", "unitNb": 1}
+    ],
+    "player_2": [
+        {"id": "Dark Angels/Intercessor Squad@5/ABR +CS", "unitNb": 1},
+        {"id": "Grey Knights/Brotherhood Terminators@5/", "unitNb": 1},
+        {"id": "Tau/Strike Team@10/", "unitNb": 1},
+        {"id": "Generic/T7 3+ Tank Target@1/", "unitNb": 1}
+    ]
+}

@@ -1,0 +1,1132 @@
+[
+    {
+        "name": "Captain",
+        "variant": "RB",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:Pur",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Purgatorus",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:PW",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Primarch's Wrath",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:MCW",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade (Master-crafted)",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PS +R:HB",
+        "cost": 90,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Heavenfall Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -4,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "CS +R:TOT",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PS +R:BB",
+        "cost": 90,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "The Burning Blade",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -5,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PF",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Powerfist",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PF +R:MCW",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Powerfist (Master-crafted)",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "TH",
+        "cost": 105,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Thunder Hammer",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "TH +R:MCW",
+        "cost": 105,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Thunder Hammer (Master-crafted)",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -2,
+                "D": 4
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB !IS+C",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:Pur !IS+C",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Purgatorus",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:PW !IS+C",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Primarch's Wrath",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:MCW !IS+C",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade (Master-crafted)",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PS +R:HB !IS+C",
+        "cost": 90,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Heavenfall Blade",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -4,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "CS +R:TOT !IS+C",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PS +R:BB !IS+C",
+        "cost": 90,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "The Burning Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -5,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PF !IS+C",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Powerfist",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 9,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PF +R:MCW !IS+C",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Powerfist (Master-crafted)",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 9,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "TH !IS+C",
+        "cost": 105,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Thunder Hammer",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 9,
+                "AP": -2,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "TH +R:MCW !IS+C",
+        "cost": 105,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Thunder Hammer (Master-crafted)",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 9,
+                "AP": -2,
+                "D": 4
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB !CK",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:Pur !CK",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Purgatorus",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:PW !CK",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Primarch's Wrath",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:MCW !CK",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade (Master-crafted)",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -3,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PS +R:HB !CK",
+        "cost": 90,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Heavenfall Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -4,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "CS +R:TOT !CK",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 8,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PS +R:BB !CK",
+        "cost": 90,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "The Burning Blade",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -5,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB !IS+C !CK",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:Pur !IS+C !CK",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Purgatorus",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:PW !IS+C !CK",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Primarch's Wrath",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "RB +R:MCW !IS+C !CK",
+        "cost": 95,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Relic Blade (Master-crafted)",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 3,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PS +R:HB !IS+C !CK",
+        "cost": 90,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Heavenfall Blade",
+                "attackNb": 7,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -4,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "CS +R:TOT !IS+C !CK",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Teeth of Terra",
+                "attackNb": 9,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -2,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    },
+    {
+        "name": "Captain",
+        "variant": "PS +R:BB !IS+C !CK",
+        "cost": 90,
+        "unitSize": 1,
+        "W": 5,
+        "T": 4,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Master-crafted Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "The Burning Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -5,
+                "D": 2,
+                "W@InfantryBiker": 2
+            }
+        ]
+    }
+]
