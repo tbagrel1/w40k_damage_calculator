@@ -8,7 +8,8 @@ from copy import deepcopy
 # TODO: optimal profile calculator: choose M, R, or M+R on a per-unit basis based on efficiency
 # TODO: Melee efficiency means nothing for vehicle (but be careful blast)
 # TODO: indirect damage capping
-# TODO: handle D6 on attackNb
+# TODO: handle D6 on attackNb +blast
+# TODO: immobile bonus on CC + penalty on melee
 
 ALLOWED_KEYWORDS = [
     "transhuman",
@@ -33,7 +34,22 @@ def compute_wound_chance(strength, toughness, transhuman, override):
     else:
         return 1
 
-def compute_ifs(ap, sv, isv, aoc):
+def parse_sv(string):
+    if string == "null":
+        return None
+    return int(string.rstrip("+"))
+
+def compute_ifs(mode, ap, raw_sv, raw_isv, aoc):
+    if isinstance(raw_sv, int) or isinstance(raw_sv, float) or raw_sv is None:
+        sv = raw_sv
+    else:
+        ranged_raw_sv, melee_raw_sv = raw_sv.split("<>")
+        sv = parse_sv(melee_raw_sv) if mode == "melee" else parse_sv(ranged_raw_sv)
+    if isinstance(raw_isv, int) or isinstance(raw_isv, float) or raw_isv is None:
+        isv = raw_isv
+    else:
+        ranged_raw_isv, melee_raw_isv = raw_isv.split("<>")
+        isv = parse_sv(melee_raw_isv) if mode == "melee" else parse_sv(ranged_raw_isv)
     if isv == 0 or isv is None:
         isv = 7
     fs = max(2, min(
@@ -44,6 +60,19 @@ def compute_ifs(ap, sv, isv, aoc):
     return ifs
 
 def compute_dmg(damage_prof, target_wounds, red):
+    if not isinstance(damage_prof, int) and "+" in damage_prof and "<>" in damage_prof:
+        base, fix_range = damage_prof.split("+")
+        fix_1, fix_2 = fix_range.split("<>")
+        wp1, wp2 = f"{base}+{fix_1}", f"{base}+{fix_2}"
+        df1 = compute_dmg_(wp1, target_wounds, red)
+        df2 = compute_dmg_(wp2, target_wounds, red)
+        avg = (df1 + df2) / 2
+        # print(f"DEBUG: with {wp1}: {df1}W, with {wp2}: {df2}W, avg: {avg}")
+        return avg
+    else:
+        return compute_dmg_(damage_prof, target_wounds, red)
+
+def compute_dmg_(damage_prof, target_wounds, red):
     if not isinstance(damage_prof, int):
         if "+" in damage_prof:
             damage_prof_2, raw_fix_dam = damage_prof.split("+")
@@ -112,12 +141,19 @@ def fight(mode, unit, target, aoc_enabled):
         mwonw6 = weapon["MW@W6"] if "MW@W6" in weapon else 0
         hits = weapon["attackNb"]
         D = weapon["D"]
-        iwsbs = 6 - weapon["WS/BS"] + 1
+        wsbs = weapon["WS/BS"]
+        if wsbs is not None:
+        # Grim resolve:
+            if "Dark Angels" in unit["groups"] and mode == "ranged":
+                wsbs = max(2, wsbs - 0.5)
+            iwsbs = 6 - wsbs + 1
+        else:
+            iwsbs = 6
         wc = compute_wound_chance(
             weapon["S"], target["T"], "transhuman" in target["keywords"],
             weapon["W@InfantryBiker"] if ("W@InfantryBiker" in weapon and "transhuman" not in target["keywords"] and ("infantry" in target["keywords"] or "biker" in target["keywords"])) else None
         )
-        ifs = compute_ifs(weapon["AP"], target["Sv"], target["ISv"], "armorOfContempt" in target["keywords"]  and aoc_enabled)
+        ifs = compute_ifs(mode, weapon["AP"], target["Sv"], target["ISv"], "armorOfContempt" in target["keywords"]  and aoc_enabled)
         dmg_red = target["damageReduction"] if "damageReduction" in target else ""
         if "D@Vehicle" in weapon and "vehicle" in target["keywords"]:
             DonVehicle = weapon["D@Vehicle"]

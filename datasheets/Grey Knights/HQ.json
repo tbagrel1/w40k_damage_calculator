@@ -9,7 +9,7 @@
         "keywords": ["infantry", "armorOfContempt"],
         "unitSize": 1,
         "cost": 180,
-        "psykerMW": 1.5,
+        "psykerMW": 3,
         "rangedWeapons": [
             {
                 "name": "Master-crafted Storm Bolter",
@@ -41,7 +41,7 @@
         "keywords": ["infantry", "armorOfContempt"],
         "unitSize": 1,
         "cost": 150,
-        "psykerMW": 1.5,
+        "psykerMW": 3,
         "rangedWeapons": [
             {
                 "name": "Master-crafted Storm Bolter",
@@ -60,6 +60,38 @@
                 "S": 8,
                 "AP": -3,
                 "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Brotherhood Librarian",
+        "variant": "NFS +SB",
+        "W": 5,
+        "T": 4,
+        "Sv": 2,
+        "ISv": 5,
+        "keywords": ["infantry", "armorOfContempt"],
+        "unitSize": 1,
+        "cost": 110,
+        "psykerMW": 3,
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Nemesis Force Sword",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
             }
         ]
     }

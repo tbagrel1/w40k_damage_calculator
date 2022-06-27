@@ -47,7 +47,7 @@
                 "WS/BS": 3,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+1"
+                "D": "D6+0<>2"
             },
             {
                 "name": "Hurricane Bolter",
@@ -86,7 +86,77 @@
                 "WS/BS": 3,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+1"
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Siege Drills",
+                "attackNb": 13,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Centurion Assault Squad",
+        "variant": "6F +3HB",
+        "cost": 195,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Flamer",
+                "attackNb": 21,
+                "WS/BS": null,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Hurricane Bolter",
+                "attackNb": 27,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Siege Drills",
+                "attackNb": 13,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Centurion Assault Squad",
+        "variant": "6F AL",
+        "cost": 165,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Flamer",
+                "attackNb": 21,
+                "WS/BS": null,
+                "S": 4,
+                "AP": 0,
+                "D": 1
             }
         ],
         "meleeWeapons": [
@@ -103,7 +173,7 @@
     {
         "name": "Deathwing Knights",
         "variant": "",
-        "cost": 235,
+        "cost": 215,
         "unitSize": 5,
         "W": 3,
         "T": 4,
@@ -126,6 +196,76 @@
                 "attackNb": 4,
                 "WS/BS": 2,
                 "S": 6,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Aggressor Squad",
+        "variant": "FG",
+        "cost": 120,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Flamestorm Gauntlet (Shooting)",
+                "attackNb": 21,
+                "WS/BS": null,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Flamestorm Gauntlet (Melee)",
+                "attackNb": 13,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Aggressor Squad",
+        "variant": "BG+FGL",
+        "cost": 135,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Boltstorm Gauntlet (Shooting)",
+                "attackNb": 18,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Fragstorm Grenade Launcher",
+                "attackNb": 10.5,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Boltstorm Gauntlet (Melee)",
+                "attackNb": 13,
+                "WS/BS": 4,
+                "S": 8,
                 "AP": -3,
                 "D": 2
             }

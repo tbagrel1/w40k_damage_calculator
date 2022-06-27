@@ -11,7 +11,7 @@
         "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
-                "name": "Auto-Bolt Rifle",
+                "name": "Auto Bolt Rifle",
                 "attackNb": 15,
                 "WS/BS": 3,
                 "S": 4,
@@ -34,6 +34,240 @@
                 "WS/BS": 3,
                 "S": 4,
                 "AP": -1,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Intercessor Squad",
+        "variant": "BR +CS",
+        "cost": 100,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Rifle",
+                "attackNb": 7.5,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Intercessor Squad",
+        "variant": "SBR +CS",
+        "cost": 100,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Stalker Bolt Rifle",
+                "attackNb": 5,
+                "WS/BS": 3.5,
+                "S": 4,
+                "AP": -2,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Assault Intercessor Squad",
+        "variant": "+PF",
+        "cost": 105,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Heavy Bolt Rifle",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Power Fist",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Heavy Intercessor Squad",
+        "variant": "HelBR +HelHB",
+        "cost": 150,
+        "unitSize": 5,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Hellstorm Bolt Rifle",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Hellstorm Heavy Bolter",
+                "attackNb": 4,
+                "WS/BS": 3.5,
+                "S": 5,
+                "AP": 0,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Heavy Intercessor Squad",
+        "variant": "HeaBR +HeaB",
+        "cost": 150,
+        "unitSize": 5,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Heavy Bolt Rifle",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Heavy Bolter",
+                "attackNb": 3,
+                "WS/BS": 3.5,
+                "S": 5,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Heavy Intercessor Squad",
+        "variant": "EBR +EHB",
+        "cost": 150,
+        "unitSize": 5,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Executor Bolt Rifle",
+                "attackNb": 4,
+                "WS/BS": 3.5,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "Executor Heavy Bolter",
+                "attackNb": 2,
+                "WS/BS": 3.5,
+                "S": 5,
+                "AP": -2,
+                "D": 3
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
                 "D": 1
             }
         ]

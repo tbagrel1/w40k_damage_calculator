@@ -1,9 +1,9 @@
 [
     {
         "name": "Attack Bike Squad",
-        "variant": "3MM",
-        "cost": 180,
-        "unitSize": 3,
+        "variant": "MM",
+        "cost": 60,
+        "unitSize": 1,
         "W": 4,
         "T": 5,
         "Sv": 3,
@@ -12,7 +12,7 @@
         "rangedWeapons": [
             {
                 "name": "Twin Boltgun",
-                "attackNb": 12,
+                "attackNb": 4,
                 "WS/BS": 3,
                 "S": 4,
                 "AP": 0,
@@ -20,17 +20,126 @@
             },
             {
                 "name": "Multi-melta",
-                "attackNb": 6,
+                "attackNb": 2,
                 "WS/BS": 3,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+1"
+                "D": "D6+0<>2"
             }
         ],
         "meleeWeapons": [
             {
                 "name": "<Base Weapon>",
-                "attackNb": 9,
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Invader ATV Squad",
+        "variant": "MM",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 8,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["biker", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Twin Auto Bolt Rifle",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Multi-melta",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Land Speeders",
+        "variant": "MM",
+        "cost": 70,
+        "unitSize": 1,
+        "W": 6,
+        "T": 6,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Multi-melta",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Land Speeder Tornadoes",
+        "variant": "MM AC",
+        "cost": 85,
+        "unitSize": 1,
+        "W": 6,
+        "T": 6,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Multi-melta",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            },
+            {
+                "name": "Assault Cannon",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 3,
                 "WS/BS": 3,
                 "S": 4,
                 "AP": 0,
@@ -40,7 +149,38 @@
     },
     {
         "name": "Hellblaster Squad",
-        "variant": "API !RRH1",
+        "variant": "API",
+        "cost": 165,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Assault Plasma Incinerator",
+                "attackNb": 15,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Hellblaster Squad",
+        "variant": "API !OC !RRH1",
         "cost": 165,
         "unitSize": 5,
         "W": 2,
@@ -66,13 +206,78 @@
                 "WS/BS": 3,
                 "S": 4,
                 "AP": 0,
+                "D": 1,
+                "reroll@H1": true
+            }
+        ]
+    },
+    {
+        "name": "Hellblaster Squad",
+        "variant": "API !OC !RRH1 !WotDA",
+        "cost": 165,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Assault Plasma Incinerator",
+                "attackNb": 15,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -4,
+                "D": 3,
+                "reroll@H1": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1,
+                "reroll@H1": true
+            }
+        ]
+    },
+    {
+        "name": "Inceptor Squad",
+        "variant": "PE",
+        "cost": 180,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Plasma Exterminator",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -3,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
                 "D": 1
             }
         ]
     },
     {
         "name": "Inceptor Squad",
-        "variant": "PE !RRH1",
+        "variant": "PE !OC !RRH1",
         "cost": 180,
         "unitSize": 3,
         "W": 3,
@@ -98,7 +303,41 @@
                 "WS/BS": 3,
                 "S": 4,
                 "AP": 0,
-                "D": 1
+                "D": 1,
+                "reroll@H1": true
+            }
+        ]
+    },
+    {
+        "name": "Inceptor Squad",
+        "variant": "PE !OC !RRH1 !WotDA",
+        "cost": 180,
+        "unitSize": 3,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Plasma Exterminator",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 3,
+                "reroll@H1": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1,
+                "reroll@H1": true
             }
         ]
     },
@@ -119,7 +358,7 @@
                 "WS/BS": 3,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+1"
+                "D": "D6+0<>2"
             }
         ],
         "meleeWeapons": [
@@ -150,7 +389,7 @@
                 "WS/BS": 3,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+1"
+                "D": "D6+0<>2"
             },
             {
                 "name": "Multi-melta",
@@ -158,7 +397,7 @@
                 "WS/BS": 3.5,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+1"
+                "D": "D6+0<>2"
             }
         ],
         "meleeWeapons": [
@@ -184,12 +423,12 @@
         "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
-                "name": "Melta Rifle",
+                "name": "Heavy Melta Rifle",
                 "attackNb": 6,
                 "WS/BS": 3.5,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+3"
+                "D": "D6+2<>4"
             }
         ],
         "meleeWeapons": [
@@ -215,12 +454,12 @@
         "keywords": ["infantry", "armorOfContempt"],
         "rangedWeapons": [
             {
-                "name": "Melta Rifle",
+                "name": "Heavy Melta Rifle",
                 "attackNb": 4,
                 "WS/BS": 3.5,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+3"
+                "D": "D6+2<>4"
             },
             {
                 "name": "Multi-melta",
@@ -228,7 +467,174 @@
                 "WS/BS": 3.5,
                 "S": 8,
                 "AP": -4,
-                "D": "D6+1"
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Ravenwing Black Knights",
+        "variant": "5CH",
+        "cost": 175,
+        "unitSize": 5,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["biker", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Plasma Talon",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -3,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Corvus Hammer",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Ravenwing Black Knights",
+        "variant": "5CH !OC !RRH1",
+        "cost": 175,
+        "unitSize": 5,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["biker", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Plasma Talon",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "reroll@H1": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Corvus Hammer",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2,
+                "reroll@H1": true
+            }
+        ]
+    },
+    {
+        "name": "Ravenwing Black Knights",
+        "variant": "5CH !OC !RRH1 !WotDA",
+        "cost": 175,
+        "unitSize": 5,
+        "W": 3,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["biker", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Plasma Talon",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 3,
+                "reroll@H1": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Corvus Hammer",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2,
+                "reroll@H1": true
+            }
+        ]
+    },
+    {
+        "name": "Eliminator Squad",
+        "variant": "3LF",
+        "cost": 75,
+        "unitSize": 3,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Las Fusil",
+                "attackNb": 3,
+                "WS/BS": 2.5,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Eliminator Squad",
+        "variant": "2LF 1IBC",
+        "cost": 75,
+        "unitSize": 3,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Las Fusil",
+                "attackNb": 2,
+                "WS/BS": 2.5,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            },
+            {
+                "name": "Investigator Bolt Carbine",
+                "attackNb": 1,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": -1,
+                "D": 2
             }
         ],
         "meleeWeapons": [

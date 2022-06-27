@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Paladin Squad",
+        "variant": "+2Psy AR",
+        "cost": 245,
+        "W": 3,
+        "T": 4,
+        "Sv": 1.3,
+        "ISv": 5,
+        "keywords": ["infantry", "armorOfContempt"],
+        "unitSize": 5,
+        "psykerMW": 0,
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Psilencer",
+                "attackNb": 6,
+                "WS/BS": 3.5,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Psycannon",
+                "attackNb": 6,
+                "WS/BS": 3.5,
+                "S": 7,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Nemesis Force Sword",
+                "attackNb": 21,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    }
+]

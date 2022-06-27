@@ -72,76 +72,6 @@
         ]
     },
     {
-        "name": "Eliminator Squad",
-        "variant": "3LF",
-        "cost": 90,
-        "unitSize": 3,
-        "W": 2,
-        "T": 4,
-        "Sv": 3,
-        "ISv": null,
-        "keywords": ["infantry", "armorOfContempt"],
-        "rangedWeapons": [
-            {
-                "name": "Las Fusil",
-                "attackNb": 3,
-                "WS/BS": 2.5,
-                "S": 8,
-                "AP": -3,
-                "D": 3
-            }
-        ],
-        "meleeWeapons": [
-            {
-                "name": "<Base Weapon>",
-                "attackNb": 10,
-                "WS/BS": 3,
-                "S": 4,
-                "AP": 0,
-                "D": 1
-            }
-        ]
-    },
-    {
-        "name": "Eliminator Squad",
-        "variant": "2LF 1IBC",
-        "cost": 85,
-        "unitSize": 3,
-        "W": 2,
-        "T": 4,
-        "Sv": 3,
-        "ISv": null,
-        "keywords": ["infantry", "armorOfContempt"],
-        "rangedWeapons": [
-            {
-                "name": "Las Fusil",
-                "attackNb": 2,
-                "WS/BS": 2.5,
-                "S": 8,
-                "AP": -3,
-                "D": 3
-            },
-            {
-                "name": "Investigator Bolt Carbine",
-                "attackNb": 1,
-                "WS/BS": 2,
-                "S": 4,
-                "AP": -1,
-                "D": 2
-            }
-        ],
-        "meleeWeapons": [
-            {
-                "name": "<Base Weapon>",
-                "attackNb": 10,
-                "WS/BS": 3,
-                "S": 4,
-                "AP": 0,
-                "D": 1
-            }
-        ]
-    },
-    {
         "name": "Suppressor Squad",
         "variant": "",
         "cost": 100,
@@ -169,6 +99,138 @@
                 "S": 4,
                 "AP": 0,
                 "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Assault Squad",
+        "variant": "+2PP +Evi +PF +GP",
+        "cost": 100,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt pistol",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Plasma pistol",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -3,
+                "D": 1
+            },
+            {
+                "name": "Grav pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Chainsword",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Eviscerator",
+                "attackNb": 2,
+                "WS/BS": 4,
+                "S": 7,
+                "AP": -4,
+                "D": 2
+            },
+            {
+                "name": "Power Fist",
+                "attackNb": 3,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Assault Squad",
+        "variant": "+2PP +Evi +PF +GP !OC !RRH1",
+        "cost": 100,
+        "unitSize": 5,
+        "W": 2,
+        "T": 4,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt pistol",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1,
+                "reroll@H1": true
+            },
+            {
+                "name": "Plasma pistol",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "reroll@H1": true
+            },
+            {
+                "name": "Grav pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2,
+                "reroll@H1": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Chainsword",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1,
+                "reroll@H1": true
+            },
+            {
+                "name": "Eviscerator",
+                "attackNb": 2,
+                "WS/BS": 4,
+                "S": 7,
+                "AP": -4,
+                "D": 2,
+                "reroll@H1": true
+            },
+            {
+                "name": "Power Fist",
+                "attackNb": 3,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -3,
+                "D": 2,
+                "reroll@H1": true
             }
         ]
     }

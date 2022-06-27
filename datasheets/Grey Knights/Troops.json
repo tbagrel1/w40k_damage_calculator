@@ -22,7 +22,7 @@
             {
                 "name": "Psilencer",
                 "attackNb": 6,
-                "WS/BS": 3,
+                "WS/BS": 3.5,
                 "S": 4,
                 "AP": -1,
                 "D": 1

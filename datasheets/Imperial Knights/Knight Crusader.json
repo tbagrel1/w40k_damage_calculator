@@ -6,7 +6,7 @@
         "W": 24,
         "T": 8,
         "Sv": 3,
-        "ISv": 5,
+        "ISv": "5<>null",
         "keywords": ["vehicle", "titanic"],
         "unitSize": 1,
         "rangedWeapons": [
@@ -37,7 +37,7 @@
             {
                 "name": "Heavy Flamer",
                 "attackNb": 12,
-                "WS/BS": 1,
+                "WS/BS": null,
                 "S": 5,
                 "AP": -1,
                 "D": 1

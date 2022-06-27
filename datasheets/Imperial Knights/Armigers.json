@@ -6,7 +6,7 @@
         "W": 12,
         "T": 7,
         "Sv": 3,
-        "ISv": 5,
+        "ISv": "5<>null",
         "keywords": ["vehicle"],
         "unitSize": 1,
         "rangedWeapons": [
