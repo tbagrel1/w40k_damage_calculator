@@ -1,6 +1,6 @@
 {
     "player_1": [
-        {"include_group": "Dark Angels/Melee Elites"}
+        {"include_group": "Space Marines/Lords of War"}
     ],
     "player_2": [
         {"id": "Grey Knights/Strike Squad@5/+Psi", "unitNb": 1},

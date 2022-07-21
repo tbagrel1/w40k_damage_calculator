@@ -1,0 +1,206 @@
+[
+    {
+        "name": "Retributor Squad",
+        "variant": "CS 4MM 1AC",
+        "cost": 150,
+        "unitSize": 5,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Multi-Melta",
+                "attackNb": 10,
+                "WS/BS": 3.5,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            },
+            {
+                "name": "Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 8,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Retributor Squad",
+        "variant": "CS 4MM 2AC",
+        "cost": 220,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Multi-Melta",
+                "attackNb": 10,
+                "WS/BS": 3.5,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            },
+            {
+                "name": "Boltgun",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 18,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Retributor Squad",
+        "variant": "CS 4MM 1AC !MVRR",
+        "cost": 150,
+        "unitSize": 5,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Multi-Melta",
+                "attackNb": 10,
+                "WS/BS": 3.5,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2",
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Boltgun",
+                "attackNb": 1.5,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 8,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ]
+    },
+    {
+        "name": "Retributor Squad",
+        "variant": "CS 4MM 2AC !MVRR",
+        "cost": 220,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Multi-Melta",
+                "attackNb": 10,
+                "WS/BS": 3.5,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2",
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Boltgun",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 18,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ]
+    }
+]

@@ -1,0 +1,267 @@
+[
+    {
+        "name": "Paragon Warsuits",
+        "variant": "3SB 3PWM 3MM",
+        "cost": 240,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": 6,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter",
+                "attackNb": 18,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Multi-Melta",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Paragon War Mace",
+                "attackNb": 13,
+                "WS/BS": 4,
+                "S": 9,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Paragon Warsuits",
+        "variant": "3PGL 3PWM 3MM",
+        "cost": 240,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": 6,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Paragon Grenade Launcher",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -1,
+                "D": "D3"
+            },
+            {
+                "name": "Multi-Melta",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Paragon War Mace",
+                "attackNb": 13,
+                "WS/BS": 4,
+                "S": 9,
+                "AP": -3,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Paragon Warsuits",
+        "variant": "3PGL 3PWB 3MM",
+        "cost": 240,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": 6,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Paragon Grenade Launcher",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -1,
+                "D": "D3"
+            },
+            {
+                "name": "Multi-Melta",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Paragon War Blade",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Paragon Warsuits",
+        "variant": "3PGL 3PWM 3MM !MVRR",
+        "cost": 240,
+        "unitSize": 3,
+        "W": 4,
+        "T": 5,
+        "Sv": 2,
+        "ISv": 6,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "damageReduction": "-1",
+        "rangedWeapons": [
+            {
+                "name": "Paragon Grenade Launcher",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -1,
+                "D": "D3",
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Multi-Melta",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2",
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Paragon War Mace",
+                "attackNb": 13,
+                "WS/BS": 4,
+                "S": 9,
+                "AP": -3,
+                "D": 3,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ]
+    },
+    {
+        "name": "Mortifiers",
+        "variant": "2MHF 2PBB +Anc",
+        "cost": 65,
+        "unitSize": 1,
+        "W": 5,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "feelNoPain": 5,
+        "rangedWeapons": [
+            {
+                "name": "Ministorum Heavy Flamer",
+                "attackNb": 7,
+                "WS/BS": 1,
+                "S": 6,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Penitent Buzz-Blade",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Mortifiers",
+        "variant": "2HB 2PBB +Anc",
+        "cost": 65,
+        "unitSize": 1,
+        "W": 5,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "feelNoPain": 5,
+        "rangedWeapons": [
+            {
+                "name": "Heavy Bolter",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Penitent Buzz-Blade",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Mortifiers",
+        "variant": "2HB 2PF +Anc",
+        "cost": 65,
+        "unitSize": 1,
+        "W": 5,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "feelNoPain": 5,
+        "rangedWeapons": [
+            {
+                "name": "Heavy Bolter",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Penitent Flail",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -2,
+                "D": 1,
+                "reroll@HF": true
+            }
+        ]
+    }
+]

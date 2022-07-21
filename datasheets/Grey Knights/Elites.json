@@ -10,6 +10,7 @@
         "keywords": ["infantry", "armorOfContempt"],
         "unitSize": 5,
         "psykerMW": 0,
+        "feelNoPain@MW": 5,
         "rangedWeapons": [
             {
                 "name": "Storm Bolter",

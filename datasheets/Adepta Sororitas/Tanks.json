@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Sororitas Rhino",
+        "variant": "",
+        "cost": 80,
+        "unitSize": 1,
+        "W": 10,
+        "T": 7,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Storm Bolter",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 4,
+                "WS/BS": 6,
+                "S": 6,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    }
+]

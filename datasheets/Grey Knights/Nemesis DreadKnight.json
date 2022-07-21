@@ -11,6 +11,7 @@
         "keywords": ["vehicle"],
         "unitSize": 1,
         "psykerMW": 1.5,
+        "feelNoPain@MW": 5,
         "rangedWeapons": [
             {
                 "name": "Heavy Psycannon",

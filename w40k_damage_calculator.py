@@ -10,6 +10,8 @@ from copy import deepcopy
 # TODO: indirect damage capping
 # TODO: handle D6 on attackNb +blast
 # TODO: immobile bonus on CC + penalty on melee
+# TODO: bypass save (1 MW and attack sequence end) on W6 (eg. Celestine)
+# TODO: repentia +1 wound
 
 ALLOWED_KEYWORDS = [
     "transhuman",
@@ -36,22 +38,20 @@ def compute_wound_chance(strength, toughness, transhuman, override):
 
 def parse_sv(string):
     if string == "null":
-        return None
+        return 7
     return int(string.rstrip("+"))
 
 def compute_ifs(mode, ap, raw_sv, raw_isv, aoc):
     if isinstance(raw_sv, int) or isinstance(raw_sv, float) or raw_sv is None:
-        sv = raw_sv
+        sv = raw_sv if raw_sv is not None else 7
     else:
         ranged_raw_sv, melee_raw_sv = raw_sv.split("<>")
         sv = parse_sv(melee_raw_sv) if mode == "melee" else parse_sv(ranged_raw_sv)
     if isinstance(raw_isv, int) or isinstance(raw_isv, float) or raw_isv is None:
-        isv = raw_isv
+        isv = raw_isv if raw_isv is not None else 7
     else:
         ranged_raw_isv, melee_raw_isv = raw_isv.split("<>")
         isv = parse_sv(melee_raw_isv) if mode == "melee" else parse_sv(ranged_raw_isv)
-    if isv == 0 or isv is None:
-        isv = 7
     fs = max(2, min(
         isv,
         sv + max(0, -ap - aoc)
@@ -59,20 +59,20 @@ def compute_ifs(mode, ap, raw_sv, raw_isv, aoc):
     ifs = max(0, fs - 1)
     return ifs
 
-def compute_dmg(damage_prof, target_wounds, red):
+def compute_dmg(damage_prof, target_wounds, red, ifnp):
     if not isinstance(damage_prof, int) and "+" in damage_prof and "<>" in damage_prof:
         base, fix_range = damage_prof.split("+")
         fix_1, fix_2 = fix_range.split("<>")
         wp1, wp2 = f"{base}+{fix_1}", f"{base}+{fix_2}"
-        df1 = compute_dmg_(wp1, target_wounds, red)
-        df2 = compute_dmg_(wp2, target_wounds, red)
+        df1 = compute_dmg_(wp1, target_wounds, red, ifnp)
+        df2 = compute_dmg_(wp2, target_wounds, red, ifnp)
         avg = (df1 + df2) / 2
         # print(f"DEBUG: with {wp1}: {df1}W, with {wp2}: {df2}W, avg: {avg}")
         return avg
     else:
-        return compute_dmg_(damage_prof, target_wounds, red)
+        return compute_dmg_(damage_prof, target_wounds, red, ifnp)
 
-def compute_dmg_(damage_prof, target_wounds, red):
+def compute_dmg_(damage_prof, target_wounds, red, ifnp):
     if not isinstance(damage_prof, int):
         if "+" in damage_prof:
             damage_prof_2, raw_fix_dam = damage_prof.split("+")
@@ -93,7 +93,7 @@ def compute_dmg_(damage_prof, target_wounds, red):
                 dices = sum([[dcs + [1], dcs + [2], dcs + [3], dcs + [4], dcs + [5], dcs + [6]] for dcs in dices], [])
             else:
                 raise Exception(f"Cannot handle damage profile {damage_prof}!")
-        dices_eff = [min(target_wounds, apply_red(sum(dcs) + fix_dam, red)) for dcs in dices]
+        dices_eff = [min(target_wounds, apply_red(sum(dcs) + fix_dam, red) * (ifnp / 6)) for dcs in dices]
         eff_d = sum(dices_eff) / len(dices_eff)
         return eff_d
     else:
@@ -127,11 +127,12 @@ def fightRM(unit, target, aoc_enabled, defense=False):
     print(" -> Total: " + f"{total:.2f}W (eff: {efficiency:.2f}, {total / W:.2f} dead models)")
     return [total, efficiency, tR, effR, tM, effM]
 
-def make_dmg_repr(D, W, red):
-    if isinstance(D, int):
+def make_dmg_repr(D, W, red, ifnp):
+    if isinstance(D, int) and ifnp == 6:
         return str(min(apply_red(D, red), W))
     else:
-        return f"min({D}{red}, {W})"
+        fnp_repr = f" x ({ifnp}/6)" if ifnp != 6 else ""
+        return f"min({D}{red}{fnp_repr}, {W})"
 
 def fight(mode, unit, target, aoc_enabled):
     total = 0
@@ -155,13 +156,23 @@ def fight(mode, unit, target, aoc_enabled):
         )
         ifs = compute_ifs(mode, weapon["AP"], target["Sv"], target["ISv"], "armorOfContempt" in target["keywords"]  and aoc_enabled)
         dmg_red = target["damageReduction"] if "damageReduction" in target else ""
+        if "feelNoPain" in target:
+            ifnp = target["feelNoPain"] - 1
+        else:
+            ifnp = 6
+        if "feelNoPain@MW" in target:
+            ifnp_mw = target["feelNoPain@MW"] - 1
+        elif "feelNoPain" in target:
+            ifnp_mw = target["feelNoPain"] - 1
+        else:
+            ifnp_mw = 6
         if "D@Vehicle" in weapon and "vehicle" in target["keywords"]:
             DonVehicle = weapon["D@Vehicle"]
-            dmg_repr = make_dmg_repr(DonVehicle, W, dmg_red)
-            dmg = compute_dmg(DonVehicle, W, dmg_red)
+            dmg_repr = make_dmg_repr(DonVehicle, W, dmg_red, ifnp)
+            dmg = compute_dmg(DonVehicle, W, dmg_red, ifnp)
         else:
-            dmg_repr = make_dmg_repr(D, W, dmg_red)
-            dmg = compute_dmg(D, W, dmg_red)
+            dmg_repr = make_dmg_repr(D, W, dmg_red, ifnp)
+            dmg = compute_dmg(D, W, dmg_red, ifnp)
         if "reroll@HF" in weapon and weapon["reroll@HF"]:
             rrhc = "!!"
             hit_prob = iwsbs/6 + (1-iwsbs/6)*(iwsbs/6)
@@ -180,8 +191,9 @@ def fight(mode, unit, target, aoc_enabled):
         else:
             rrwc = ""
             wound_prob = wc/6
-        total_weapon = hits * hit_prob * wound_prob * (ifs/6) * dmg + hits * hit_prob * (1/6) * mwonw6
-        print(f"  + {weapon_name}: {hits} x ({iwsbs}/6){rrhc} x ({wc}/6){rrwc} x ({ifs}/6) x {dmg_repr}" + (f" + {hits} x ({iwsbs}/6) x (1/6) x {mwonw6} MW " if mwonw6 > 0 else "") + f" = {total_weapon:.2f} ({total_weapon / W:.2f} dead models)")
+        total_weapon = hits * hit_prob * wound_prob * (ifs/6) * dmg + hits * hit_prob * (1/6) * mwonw6 * (ifnp_mw / 6)
+        fnp_mw_repr = f" x ({ifnp_mw}/6)" if ifnp_mw != 6 else ""
+        print(f"  + {weapon_name}: {hits} x ({iwsbs}/6){rrhc} x ({wc}/6){rrwc} x ({ifs}/6) x {dmg_repr}" + (f" + {hits} x ({iwsbs}/6) x (1/6) x {mwonw6}{fnp_mw_repr} MW " if mwonw6 > 0 else "") + f" = {total_weapon:.2f} ({total_weapon / W:.2f} dead models)")
         total += total_weapon
     if "psykerMW" in unit:
         psyker_mw = unit["psykerMW"]

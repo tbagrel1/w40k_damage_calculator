@@ -10,6 +10,7 @@
         "unitSize": 1,
         "cost": 180,
         "psykerMW": 3,
+        "feelNoPain@MW": 5,
         "rangedWeapons": [
             {
                 "name": "Master-crafted Storm Bolter",
@@ -42,6 +43,7 @@
         "unitSize": 1,
         "cost": 150,
         "psykerMW": 3,
+        "feelNoPain@MW": 5,
         "rangedWeapons": [
             {
                 "name": "Master-crafted Storm Bolter",
@@ -74,6 +76,7 @@
         "unitSize": 1,
         "cost": 110,
         "psykerMW": 3,
+        "feelNoPain@MW": 5,
         "rangedWeapons": [
             {
                 "name": "Storm Bolter",

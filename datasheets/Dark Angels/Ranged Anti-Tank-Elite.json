@@ -647,5 +647,129 @@
                 "D": 1
             }
         ]
+    },
+    {
+        "name": "Rapier Carrier",
+        "variant": "QHB",
+        "cost": 75,
+        "unitSize": 1,
+        "W": 5,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Quad Heavy Bolter",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Rapier Carrier",
+        "variant": "GC",
+        "cost": 75,
+        "unitSize": 1,
+        "W": 5,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Graviton Cannon",
+                "attackNb": 3.5,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -3,
+                "D": 3
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Rapier Carrier",
+        "variant": "LD",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Laser Destroyer",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": "D3+3"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Rapier Carrier",
+        "variant": "Quad Launcher",
+        "cost": 110,
+        "unitSize": 1,
+        "W": 5,
+        "T": 5,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Quad Launcher",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -2,
+                "D": 3
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ]
     }
 ]

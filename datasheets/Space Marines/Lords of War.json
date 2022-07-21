@@ -1,0 +1,184 @@
+[
+    {
+        "name": "Astraeus",
+        "variant": "TC 1IHS PE !OC",
+        "cost": 585,
+        "unitSize": 1,
+        "W": 42,
+        "T": 8,
+        "Sv": 2,
+        "ISv": null,
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Twin Macro-accelerator Cannon",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -2,
+                "D": 3
+            },
+            {
+                "name": "Twin Lascannon",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 9,
+                "AP": -3,
+                "D": "D6"
+            },
+            {
+                "name": "Plasma Eradicator",
+                "attackNb": 7,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": 3
+            },
+            {
+                "name": "Ironhail Heavy Stubber",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Storm Bolter",
+                "attackNb": 3,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+            
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 7,
+                "WS/BS": 5,
+                "S": 8,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Falchion",
+        "variant": "LD +MM",
+        "cost": 595,
+        "unitSize": 1,
+        "W": 26,
+        "T": 8,
+        "Sv": 2,
+        "ISv": null,
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Twin Falchion Volcano Cannon",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 14,
+                "AP": -5,
+                "D": 6
+            },
+            {
+                "name": "Laser Destroyer",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": "D3+3"
+            },
+            {
+                "name": "Twin Heavy Bolter",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2
+            },
+            {
+                "name": "Multi Melta",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 7,
+                "WS/BS": 5,
+                "S": 8,
+                "AP": -2,
+                "D": "D3"
+            }
+        ]
+    },
+    {
+        "name": "Fellblade",
+        "variant": "LD +MM",
+        "cost": 595,
+        "unitSize": 1,
+        "W": 26,
+        "T": 8,
+        "Sv": 2,
+        "ISv": null,
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Fellblade Accelerator Cannon",
+                "attackNb": 7,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 2
+            },
+            {
+                "name": "Demolisher Cannon",
+                "attackNb": 3.5,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -3,
+                "D":"D6"
+            },
+            {
+                "name": "Laser Destroyer",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -4,
+                "D": "D3+3"
+            },
+            {
+                "name": "Twin Heavy Bolter",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -1,
+                "D": 2
+            },
+            {
+                "name": "Multi Melta",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 7,
+                "WS/BS": 5,
+                "S": 8,
+                "AP": -2,
+                "D": "D3"
+            }
+        ]
+    }
+]

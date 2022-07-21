@@ -1,0 +1,143 @@
+[
+    {
+        "name": "Battle Sister Squad",
+        "variant": "CS CM M",
+        "cost": 75,
+        "unitSize": 5,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Boltgun",
+                "attackNb": 4.5,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Meltagun",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 8,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Battle Sister Squad",
+        "variant": "CS",
+        "cost": 55,
+        "unitSize": 5,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Boltgun",
+                "attackNb": 7.5,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 8,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Sisters Novitiate",
+        "variant": "BP PS SI 8NMW",
+        "cost": 85,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 4,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Auto Pistol",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 3,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 3,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Novitiate Melee Weapons",
+                "attackNb": 32,
+                "WS/BS": 4,
+                "S": 4,
+                "AP": -1,
+                "D": 1
+            },
+            {
+                "name": "Power Sword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 4,
+                "AP": -4,
+                "D": 1
+            }
+        ]
+    }
+]

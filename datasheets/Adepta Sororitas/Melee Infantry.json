@@ -1,0 +1,576 @@
+[
+    {
+        "name": "Arco-Flagellants",
+        "variant": "",
+        "cost": 117,
+        "unitSize": 9,
+        "W": 2,
+        "T": 4,
+        "Sv": 7,
+        "ISv": null,
+        "feelNoPain": 5,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Arco-Flails",
+                "attackNb": 36,
+                "WS/BS": 4,
+                "S": 5,
+                "AP": -1,
+                "D": 1,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Arco-Flagellants",
+        "variant": "!WH",
+        "cost": 117,
+        "unitSize": 9,
+        "W": 2,
+        "T": 4,
+        "Sv": 7,
+        "ISv": null,
+        "feelNoPain": 5,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Arco-Flails",
+                "attackNb": 54,
+                "WS/BS": 4,
+                "S": 5,
+                "AP": -1,
+                "D": 1,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Arco-Flagellants",
+        "variant": "!WH !ETW",
+        "cost": 117,
+        "unitSize": 9,
+        "W": 2,
+        "T": 4,
+        "Sv": 7,
+        "ISv": null,
+        "feelNoPain": 5,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Arco-Flails",
+                "attackNb": 81,
+                "WS/BS": 4,
+                "S": 5,
+                "AP": -1,
+                "D": 1,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Celestian Sacresants",
+        "variant": "SotF IP 9AH",
+        "cost": 150,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Inferno Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Anointed Halberd",
+                "attackNb": 27,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 1
+            },
+            {
+                "name": "Spear of the Faithful",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Celestian Sacresants",
+        "variant": "SotF IP 9HM",
+        "cost": 150,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Inferno Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Hallowed Mace",
+                "attackNb": 27,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "Spear of the Faithful",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Celestian Sacresants",
+        "variant": "SotF IP 9AH !WH",
+        "cost": 150,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Inferno Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Anointed Halberd",
+                "attackNb": 36,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 1
+            },
+            {
+                "name": "Spear of the Faithful",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Celestian Sacresants",
+        "variant": "SotF IP 9AH !MVRR",
+        "cost": 150,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Inferno Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2",
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Anointed Halberd",
+                "attackNb": 27,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Spear of the Faithful",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ]
+    },
+    {
+        "name": "Celestian Sacresants",
+        "variant": "SotF IP 9AH !WH !MVRR",
+        "cost": 150,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 9,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Inferno Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2",
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Anointed Halberd",
+                "attackNb": 36,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            },
+            {
+                "name": "Spear of the Faithful",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ]
+    },
+    {
+        "name": "Crusaders",
+        "variant": "",
+        "cost": 22,
+        "unitSize": 2,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Power Sword",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -3,
+                "D": 1,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Sisters Repentia",
+        "variant": "",
+        "cost": 126,
+        "unitSize": 9,
+        "W": 1,
+        "T": 3,
+        "Sv": 7,
+        "ISv": 6,
+        "feelNoPain": 5,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Penitent Eviscerator",
+                "attackNb": 27,
+                "WS/BS": 4,
+                "S": 6,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Sisters Repentia",
+        "variant": "!WH",
+        "cost": 126,
+        "unitSize": 9,
+        "W": 1,
+        "T": 3,
+        "Sv": 7,
+        "ISv": 6,
+        "feelNoPain": 5,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Penitent Eviscerator",
+                "attackNb": 36,
+                "WS/BS": 4,
+                "S": 6,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Sisters Repentia",
+        "variant": "!RSWB",
+        "cost": 126,
+        "unitSize": 9,
+        "W": 1,
+        "T": 3,
+        "Sv": 7,
+        "ISv": 6,
+        "feelNoPain": 5,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Penitent Eviscerator",
+                "attackNb": 27,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Sisters Repentia",
+        "variant": "!WH !RSWB",
+        "cost": 126,
+        "unitSize": 9,
+        "W": 1,
+        "T": 3,
+        "Sv": 7,
+        "ISv": 6,
+        "feelNoPain": 5,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Penitent Eviscerator",
+                "attackNb": 36,
+                "WS/BS": 4,
+                "S": 8,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Zephyrim Squad",
+        "variant": "BP +ZP",
+        "cost": 155,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 5,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Power Sword",
+                "attackNb": 41,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -4,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Zephyrim Squad",
+        "variant": "BP +ZP !IB",
+        "cost": 155,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Power Sword",
+                "attackNb": 41,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -4,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Zephyrim Squad",
+        "variant": "BP +ZP !EP",
+        "cost": 155,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 5,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Power Sword",
+                "attackNb": 41,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Zephyrim Squad",
+        "variant": "BP +ZP !IB !EP",
+        "cost": 155,
+        "unitSize": 10,
+        "W": 1,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 10,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Power Sword",
+                "attackNb": 41,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -4,
+                "D": 1
+            }
+        ]
+    }
+]

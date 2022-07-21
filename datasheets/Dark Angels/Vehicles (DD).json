@@ -461,6 +461,46 @@
         ]
     },
     {
+        "name": "Land Raider Achilles",
+        "variant": "TVC !DD",
+        "cost": 270,
+        "unitSize": 1,
+        "W": 16,
+        "T": 8,
+        "Sv": 2,
+        "ISv": 5,
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Twin Volkite Culverin",
+                "attackNb": 16,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -1,
+                "D": 2,
+                "MW@W6": 1
+            },
+            {
+                "name": "Quad Launcher",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 8,
+                "AP": -3,
+                "D": 3
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 7,
+                "WS/BS": 6,
+                "S": 8,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
         "name": "Kratos",
         "variant": "KBC LC VCul +MM !DD",
         "cost": 330,
@@ -1134,6 +1174,243 @@
                 "attackNb": 5,
                 "WS/BS": 3,
                 "S": 6,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Repulsor Executioner",
+        "variant": "MPI +IHS +IRP !DD",
+        "cost": 310,
+        "unitSize": 1,
+        "W": 16,
+        "T": 8,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Heavy Onslaught Gatling Cannon",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -2,
+                "D": 1
+            },
+            {
+                "name": "Macro Plasma Incinerator",
+                "attackNb": 3.5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -5,
+                "D": 2
+            },
+            {
+                "name": "Twin Heavy Bolter",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "(Twin Icarus + Single) Ironhail Heavy Stubber",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -2,
+                "D": 1
+            },
+            {
+                "name": "Icarus Rocket Pod",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "Storm Bolter",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Fragstorm Grenade Launcher",
+                "attackNb": 7,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 7,
+                "WS/BS": 6,
+                "S": 8,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Repulsor Executioner",
+        "variant": "MPI +IHS +IRP !OC !DD",
+        "cost": 310,
+        "unitSize": 1,
+        "W": 16,
+        "T": 8,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Heavy Onslaught Gatling Cannon",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -2,
+                "D": 1
+            },
+            {
+                "name": "Macro Plasma Incinerator",
+                "attackNb": 3.5,
+                "WS/BS": 2,
+                "S": 9,
+                "AP": -5,
+                "D": 3
+            },
+            {
+                "name": "Twin Heavy Bolter",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "(Twin Icarus + Single) Ironhail Heavy Stubber",
+                "attackNb": 12,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -2,
+                "D": 1
+            },
+            {
+                "name": "Icarus Rocket Pod",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "Storm Bolter",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Fragstorm Grenade Launcher",
+                "attackNb": 7,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 7,
+                "WS/BS": 6,
+                "S": 8,
+                "AP": 0,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Repulsor",
+        "variant": "LT IRP TLC 4FGL +IHS !DD",
+        "cost": 285,
+        "unitSize": 1,
+        "W": 16,
+        "T": 8,
+        "Sv": 3,
+        "ISv": null,
+        "keywords": ["armorOfContempt", "vehicle"],
+        "rangedWeapons": [
+            {
+                "name": "Las Talon",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 9,
+                "AP": -4,
+                "D": "D6"
+            },
+            {
+                "name": "Twin Lascannon",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 9,
+                "AP": -4,
+                "D": "D6"
+            },
+            {
+                "name": "(2x) Ironhail Heavy Stubber",
+                "attackNb": 8,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -2,
+                "D": 1
+            },
+            {
+                "name": "Icarus Rocket Pod",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 7,
+                "AP": -2,
+                "D": 2
+            },
+            {
+                "name": "Hunter-Slayer Missile",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 10,
+                "AP": -3,
+                "D": "D6"
+            },
+            {
+                "name": "Fragstorm Grenade Launcher",
+                "attackNb": 14,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            },
+            {
+                "name": "Krakstorm Grenade Launcher",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 6,
+                "AP": -1,
+                "D": "D3"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "<Base Weapon>",
+                "attackNb": 7,
+                "WS/BS": 6,
+                "S": 8,
                 "AP": 0,
                 "D": 1
             }

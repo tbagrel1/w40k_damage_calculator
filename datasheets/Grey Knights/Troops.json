@@ -10,6 +10,7 @@
         "ISv": null,
         "keywords": ["infantry", "armorOfContempt"],
         "psykerMW": 1.5,
+        "feelNoPain@MW": 5,
         "rangedWeapons": [
             {
                 "name": "Storm Bolter (*)",
@@ -50,6 +51,7 @@
         "keywords": ["infantry", "armorOfContempt"],
         "unitSize": 5,
         "psykerMW": 1.5,
+        "feelNoPain@MW": 5,
         "rangedWeapons": [
             {
                 "name": "Storm Bolter",

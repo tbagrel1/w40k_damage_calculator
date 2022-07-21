@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Dogmata",
+        "variant": "",
+        "cost": 65,
+        "unitSize": 1,
+        "W": 4,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Mace of the Righteous",
+                "attackNb": 4,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -3,
+                "D": 2
+            }
+        ]
+    },
+    {
+        "name": "Preacher",
+        "variant": "AP CS",
+        "cost": 25,
+        "unitSize": 1,
+        "W": 4,
+        "T": 3,
+        "Sv": 6,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Auto Pistol",
+                "attackNb": 1,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": 0,
+                "D": 1,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Preacher",
+        "variant": "ZV",
+        "cost": 30,
+        "unitSize": 1,
+        "W": 4,
+        "T": 3,
+        "Sv": 6,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Zealot's Vindicator",
+                "attackNb": 3.5,
+                "WS/BS": 1,
+                "S": 5,
+                "AP": -1,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Zealot's Vindicator",
+                "attackNb": 3,
+                "WS/BS": 4,
+                "S": 5,
+                "AP": -2,
+                "D": 2,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Repentia Superior",
+        "variant": "BP",
+        "cost": 40,
+        "unitSize": 1,
+        "W": 4,
+        "T": 3,
+        "Sv": 3,
+        "ISv": 6,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Neural whips",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 3,
+                "AP": -2,
+                "D": 1
+            }
+        ]
+    }
+]

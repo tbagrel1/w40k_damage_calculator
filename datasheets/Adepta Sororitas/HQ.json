@@ -1,0 +1,224 @@
+[
+    {
+        "name": "Morvenn Vahl",
+        "variant": "!WT:RR",
+        "cost": 280,
+        "unitSize": 1,
+        "W": 8,
+        "T": 5,
+        "Sv": 2,
+        "ISv": 4,
+        "damageReduction": "/2",
+        "feelNoPain@MW": 4,
+        "keywords": ["vehicle", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Fidelis",
+                "attackNb": 3,
+                "WS/BS": 2,
+                "S": 6,
+                "AP": -1,
+                "D": 2
+            },
+            {
+                "name": "Paragon Missile Launcher (Prioris)",
+                "attackNb": 2,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -2,
+                "D": "D6"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Lance of Illumination",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -3,
+                "D": 3,
+                "MW@W6": 1,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ]
+    },
+    {
+        "name": "Celestine",
+        "variant": "",
+        "cost": 200,
+        "unitSize": 1,
+        "W": 10,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "damageReduction": "-1",
+        "feelNoPain@MW": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "The Ardent Blade",
+                "attackNb": 3.5,
+                "WS/BS": 1,
+                "S": 6,
+                "AP": -2,
+                "D": 1
+            },
+            {
+                "name": "Bolt Pistol (Geminae)",
+                "attackNb": 2,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "The Ardent Blade",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 7,
+                "AP": -4,
+                "D": 2
+            },
+            {
+                "name": "Power Sword",
+                "attackNb": 6,
+                "WS/BS": 3,
+                "S": 4,
+                "AP": -3,
+                "D": 1
+            }
+        ]
+    },
+    {
+        "name": "Missionary",
+        "variant": "CS",
+        "cost": 40,
+        "unitSize": 1,
+        "W": 4,
+        "T": 3,
+        "Sv": 6,
+        "ISv": 4,
+        "keywords": ["infantry"],
+        "rangedWeapons": [
+            {
+                "name": "Ministorum Shotgun",
+                "attackNb": 2,
+                "WS/BS": 4,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Chainsword",
+                "attackNb": 4,
+                "WS/BS": 4,
+                "S": 3,
+                "AP": 0,
+                "D": 1,
+                "reroll@HF": true
+            }
+        ]
+    },
+    {
+        "name": "Canoness",
+        "variant": "BB IP +BF:WotE +R:BoSE !WT:RR",
+        "cost": 105,
+        "unitSize": 1,
+        "W": 5,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Inferno Pistol",
+                "attackNb": 1,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Blade of Saint Ellynor",
+                "attackNb": 5,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -4,
+                "D": 3,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ]
+    },
+    {
+        "name": "Canoness",
+        "variant": "BB IP +BF:WotE +R:BoSE !WT:BI",
+        "cost": 105,
+        "unitSize": 1,
+        "W": 5,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Inferno Pistol",
+                "attackNb": 1,
+                "WS/BS": 2,
+                "S": 8,
+                "AP": -4,
+                "D": "D6+0<>2"
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "Blade of Saint Ellynor",
+                "attackNb": 6,
+                "WS/BS": 2,
+                "S": 5,
+                "AP": -4,
+                "D": 3
+            }
+        ]
+    },
+    {
+        "name": "Canoness",
+        "variant": "CS BP +R:TEF !WT:RR",
+        "cost": 50,
+        "unitSize": 1,
+        "W": 5,
+        "T": 3,
+        "Sv": 2,
+        "ISv": 4,
+        "keywords": ["infantry", "armorOfContempt"],
+        "rangedWeapons": [
+            {
+                "name": "Bolt Pistol",
+                "attackNb": 1,
+                "WS/BS": 2,
+                "S": 4,
+                "AP": 0,
+                "D": 1
+            }
+        ],
+        "meleeWeapons": [
+            {
+                "name": "The Ecclesiarch’s Fury",
+                "attackNb": 5,
+                "WS/BS": 3,
+                "S": 5,
+                "AP": -4,
+                "D": 2,
+                "reroll@HF": true,
+                "reroll@WF": true
+            }
+        ]
+    }
+]
