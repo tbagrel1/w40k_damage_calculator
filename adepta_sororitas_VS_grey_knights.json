@@ -1,0 +1,13 @@
+{
+    "player_1": [
+        {"include_group": "Adepta Sororitas"}
+    ],
+    "player_2": [
+        {"id": "Grey Knights/Strike Squad@5/+Psi", "unitNb": 1},
+        {"id": "Grey Knights/Brotherhood Terminators@5/", "unitNb": 1},
+        {"id": "Grey Knights/Paladin Squad@5/+2Psy AR", "unitNb": 1},
+        {"id": "Grey Knights/Nemesis DreadKnight@1/+GP +HP +NGS:sweep", "unitNb": 2},
+        {"id": "Grey Knights/Grand Master Voldus@1/", "unitNb": 1},
+        {"id": "Grey Knights/Brotherhood Librarian@1/NFS +SB", "unitNb": 1}
+    ]
+}

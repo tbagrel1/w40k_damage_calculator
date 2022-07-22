@@ -13,6 +13,8 @@ from copy import deepcopy
 # TODO: bypass save (1 MW and attack sequence end) on W6 (eg. Celestine)
 # TODO: repentia +1 wound
 
+VERBOSE = True
+
 ALLOWED_KEYWORDS = [
     "transhuman",
     "vehicle",
@@ -21,6 +23,10 @@ ALLOWED_KEYWORDS = [
     "infantry",
     "biker"
 ]
+
+def vprint(*args, **kwargs):
+    if VERBOSE:
+        print(*args, **kwargs)
 
 def compute_wound_chance(strength, toughness, transhuman, override):
     if override is not None:
@@ -104,28 +110,31 @@ def apply_red(base_dmg, red):
         return base_dmg
     if red[0] == "-":
         return max(1, base_dmg - int(red[1:]))
-    elif red[1] == "/":
+    elif red[0] == "/":
         return max(1, math.ceil(base_dmg / int(red[1:])))
 
-def show_profile(aoc_enabled, T, W, Sv, ISv, keywords, **other):
-    return f"[T{T}/{W}W/{Sv}+" + (f"/{ISv}++" if (ISv != 0 and ISv is not None) else "") + (", AoC" if aoc_enabled and "armorOfContempt" in keywords else "") + "]"
+def show_profile(aoc_enabled, T, W, Sv, ISv, keywords, cost, **other):
+    return f"[T{T}/{W}W/{Sv}+" + (f"/{ISv}++" if (ISv != 0 and ISv is not None) else "") + (", AoC" if aoc_enabled and "armorOfContempt" in keywords else "") + f", {cost}pts]"
 
 def fightRM(unit, target, aoc_enabled, defense=False):
     target_id = target["id"] if not defense else unit["id"]
     weight = target["weight"] if not defense else unit["weight"]
     W = target["W"]
     action_desc = "Attacking" if not defense else "Attacked by"
-    print(f"- {action_desc} {target_id} " + (show_profile(aoc_enabled, **target) + " " if not defense else "") + f"(weight {weight*100:.0f}%)")
-    tR, effR = fight("ranged", unit, target, aoc_enabled)
-    tM, effM = fight("melee", unit, target, aoc_enabled)
+    vprint(f"- {action_desc} {target_id} " + (show_profile(aoc_enabled, **target) + " " if not defense else "") + f"(weight {weight*100:.0f}%)")
+    tR, effR, w100R = fight("ranged", unit, target, aoc_enabled, defense)
+    tM, effM, w100M = fight("melee", unit, target, aoc_enabled, defense)
+    mode_kw = "def" if defense else "atk"
     total = tR + tM
     if "psykerMW" in unit:
         # counted twice for melee + range
         psyker_mw = unit["psykerMW"]
         total -= psyker_mw
     efficiency = ((total / (W * target["unitSize"])) * target["cost"]) / unit["cost"]
-    print(" -> Total: " + f"{total:.2f}W (eff: {efficiency:.2f}, {total / W:.2f} dead models)")
-    return [total, efficiency, tR, effR, tM, effM]
+    w100 = w100R + w100M
+    w100_result = "" if defense else f"{w100:.2f} W/100pts, "
+    vprint(" -> Total: " + f"{total:.2f}W ({w100_result}{mode_kw} ratio: {efficiency:.2f}, {total / W:.2f} dead models)")
+    return [total, efficiency, w100, tR, effR, w100R, tM, effM, w100M]
 
 def make_dmg_repr(D, W, red, ifnp):
     if isinstance(D, int) and ifnp == 6:
@@ -134,7 +143,8 @@ def make_dmg_repr(D, W, red, ifnp):
         fnp_repr = f" x ({ifnp}/6)" if ifnp != 6 else ""
         return f"min({D}{red}{fnp_repr}, {W})"
 
-def fight(mode, unit, target, aoc_enabled):
+def fight(mode, unit, target, aoc_enabled, defense=False):
+    mode_kw = "def" if defense else "atk"
     total = 0
     W = target["W"]
     for weapon in unit[mode + "Weapons"]:
@@ -193,37 +203,44 @@ def fight(mode, unit, target, aoc_enabled):
             wound_prob = wc/6
         total_weapon = hits * hit_prob * wound_prob * (ifs/6) * dmg + hits * hit_prob * (1/6) * mwonw6 * (ifnp_mw / 6)
         fnp_mw_repr = f" x ({ifnp_mw}/6)" if ifnp_mw != 6 else ""
-        print(f"  + {weapon_name}: {hits} x ({iwsbs}/6){rrhc} x ({wc}/6){rrwc} x ({ifs}/6) x {dmg_repr}" + (f" + {hits} x ({iwsbs}/6) x (1/6) x {mwonw6}{fnp_mw_repr} MW " if mwonw6 > 0 else "") + f" = {total_weapon:.2f} ({total_weapon / W:.2f} dead models)")
+        vprint(f"  + {weapon_name}: {hits} x ({iwsbs}/6){rrhc} x ({wc}/6){rrwc} x ({ifs:.4g}/6) x {dmg_repr}" + (f" + {hits} x ({iwsbs}/6) x (1/6) x {mwonw6}{fnp_mw_repr} MW " if mwonw6 > 0 else "") + f" = {total_weapon:.2f} ({total_weapon / W:.2f} dead models)")
         total += total_weapon
     if "psykerMW" in unit:
         psyker_mw = unit["psykerMW"]
-        print(f"  + Psyker Smite: ~{psyker_mw} MW")
+        vprint(f"  + Psyker Smite: ~{psyker_mw} MW")
         total += psyker_mw
+    w100 = total / (unit["cost"] / 100)
     efficiency = ((total / (W * target["unitSize"])) * target["cost"]) / unit["cost"]
-    print(f"  -> " + ("Ranged: " if mode == "ranged" else "Melee: ") + f"{total:.2f}W (eff: {efficiency:.2f}, {total / W:.2f} dead models)")
-    return total, efficiency
+    w100_result = "" if defense else f"{w100:.2f} W/100pts, "
+    vprint(f"  -> " + ("Ranged: " if mode == "ranged" else "Melee: ") + f"{total:.2f}W ({w100_result}{mode_kw} ratio: {efficiency:.2f}, {total / W:.2f} dead models)")
+    return total, efficiency, w100
 
 def round(unit, targets, aoc):
-    print("# Attack")
+    vprint("# Attack")
     atk_scores = [[target["weight"]] + fightRM(unit, target, aoc) for target in targets]
     atk_wounds = sum(t[0] * t[1] for t in atk_scores)
     atk_eff = sum(t[0] * t[2] for t in atk_scores)
-    atk_wounds_r = sum(t[0] * t[3] for t in atk_scores)
-    atk_eff_r = sum(t[0] * t[4] for t in atk_scores)
-    atk_wounds_m = sum(t[0] * t[5] for t in atk_scores)
-    atk_eff_m = sum(t[0] * t[6] for t in atk_scores)
-    print(f">> R AVG: {atk_wounds_r:.2f}W inflicted (dmg score {atk_eff_r:.2f})\n   M AVG: {atk_wounds_m:.2f}W inflicted (dmg score {atk_eff_m:.2f})\n   R+M AVG: {atk_wounds:.2f}W inflicted (dmg score: {atk_eff:.2f})\n")
-    print("# Defense")
+    atk_w100 = sum(t[0] * t[3] for t in atk_scores)
+    atk_wounds_r = sum(t[0] * t[4] for t in atk_scores)
+    atk_eff_r = sum(t[0] * t[5] for t in atk_scores)
+    atk_w100_r = sum(t[0] * t[6] for t in atk_scores)
+    atk_wounds_m = sum(t[0] * t[7] for t in atk_scores)
+    atk_eff_m = sum(t[0] * t[8] for t in atk_scores)
+    atk_w100_m = sum(t[0] * t[9] for t in atk_scores)
+    print(f">> ATK R: {atk_wounds_r:.2f}W ({atk_w100_r:.2f} W/100pts, atk ratio {atk_eff_r:.2f})\n   ATK M: {atk_wounds_m:.2f}W ({atk_w100_m:.2f} W/100pts, atk ratio {atk_eff_m:.2f})\n   ATK R+M: {atk_wounds:.2f}W ({atk_w100:.2f} W/100pts, atk ratio: {atk_eff:.2f})")
+    vprint()
+    vprint("# Defense")
     def_scores = [[target["weight"]] + fightRM(target, unit, aoc, True) for target in targets]
     def_wounds = sum(t[0] * t[1] for t in def_scores)
     def_eff = sum(t[0] * t[2] for t in def_scores)
-    def_wounds_r = sum(t[0] * t[3] for t in def_scores)
-    def_eff_r = sum(t[0] * t[4] for t in def_scores)
-    def_wounds_m = sum(t[0] * t[5] for t in def_scores)
-    def_eff_m = sum(t[0] * t[6] for t in def_scores)
-    print(f">> R AVG: {def_wounds_r:.2f}W taken (tank score {1/def_eff_r:.2f})\n   M AVG: {def_wounds_m:.2f}W taken (tank score {1/def_eff_m:.2f})\n   R+M AVG: {def_wounds:.2f}W taken (tank score: {1/def_eff:.2f})\n")
-    print("# Overall (dmg score x tank score)")
-    print(f">> R/R eff: {atk_eff_r/def_eff_r:.2f}\n   M/M eff: {atk_eff_m/def_eff_m:.2f}\n   R+M/R+M eff: {atk_eff/def_eff:.2f}\n\n")
+    def_wounds_r = sum(t[0] * t[4] for t in def_scores)
+    def_eff_r = sum(t[0] * t[5] for t in def_scores)
+    def_wounds_m = sum(t[0] * t[7] for t in def_scores)
+    def_eff_m = sum(t[0] * t[8] for t in def_scores)
+    vprint(f">> DEF R: {def_wounds_r:.2f}W taken (def ratio {def_eff_r:.2f})\n   DEF M: {def_wounds_m:.2f}W taken (def ratio {def_eff_m:.2f})\n   DEF R+M: {def_wounds:.2f}W taken (def ratio: {def_eff:.2f})\n")
+    vprint("# Overall (score = atk ratio / def ratio)")
+    print(f">> ATK/DEF R score: {atk_eff_r/def_eff_r:.2f}\n   ATK/DEF M score: {atk_eff_m/def_eff_m:.2f}\n   ATK/DEF R+M score: {atk_eff/def_eff:.2f}\n")
+    vprint()
 
 def load_datasheets(root_path):
     all_units_dict = {}
@@ -277,9 +294,12 @@ def make_datasheet_id(army, datasheet):
 @click.command()
 @click.option("--aoc/--no-aoc", default=True, help="Should it take into account the new *Armor of Contempt* rule?")
 @click.option("--swap", is_flag=True, help="Should it analyse player 2 units (instead of player 1 units)?")
+@click.option("--verbose/--silent", default=True, help="Should it display detailed information on each battle?")
 @click.argument("DATASHEETS_DIR", type=click.Path(exists=True, file_okay=False, dir_okay=True, readable=True))
 @click.argument("BATTLE_PLAN", type=click.Path(exists=True, file_okay=True, dir_okay=False, readable=True))
-def main(aoc, swap, datasheets_dir, battle_plan):
+def main(aoc, swap, verbose, datasheets_dir, battle_plan):
+    global VERBOSE
+    VERBOSE = verbose
     all_units_dict, groups_dict = load_datasheets(datasheets_dir)
     print(f"\nLoading battle plan from {battle_plan}...\n")
     with open(battle_plan, "r", encoding="utf-8") as battle_file:
@@ -323,8 +343,8 @@ def main(aoc, swap, datasheets_dir, battle_plan):
         target["weight"] = (target["unitSize"] * target["unitNb"] * target["W"]) / total_targets_wounds
     for unit in units:
         unit_id = unit["id"]
-        aoc_string = "(with Armor of Contempt)" if aoc else "(without Armor of Contempt)"
-        print(f"## {unit_id} {aoc_string} ##\n")
+        print(f"## {unit_id} {show_profile(aoc, **unit)}")
+        vprint()
         round(unit, targets, aoc)
 
 if __name__ == "__main__":
